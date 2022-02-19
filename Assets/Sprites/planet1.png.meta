@@ -1,0 +1,2562 @@
+fileFormatVersion: 2
+guid: 711e53f650b4be120bcdbd3e72e6a116
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -522987879924544839
+    second: planet1_0
+  - first:
+      213: 2289338591182460669
+    second: planet1_1
+  - first:
+      213: 1499779452693341242
+    second: planet1_2
+  - first:
+      213: 4985090239456866908
+    second: planet1_3
+  - first:
+      213: 8401473738931837462
+    second: planet1_4
+  - first:
+      213: 1845424944787138176
+    second: planet1_5
+  - first:
+      213: 8745873399774320104
+    second: planet1_6
+  - first:
+      213: 2579835899923348911
+    second: planet1_7
+  - first:
+      213: -5993816156436522105
+    second: planet1_8
+  - first:
+      213: 741101524883500137
+    second: planet1_9
+  - first:
+      213: 3762400294121390353
+    second: planet1_10
+  - first:
+      213: 2143343217400748907
+    second: planet1_11
+  - first:
+      213: -2634371222909268562
+    second: planet1_12
+  - first:
+      213: 7471917097483917230
+    second: planet1_13
+  - first:
+      213: -4701996066021937218
+    second: planet1_14
+  - first:
+      213: -3914782340659771741
+    second: planet1_15
+  - first:
+      213: -2840352902640535394
+    second: planet1_16
+  - first:
+      213: 475069590929680255
+    second: planet1_17
+  - first:
+      213: -4433502996791926004
+    second: planet1_18
+  - first:
+      213: 7074796332484693570
+    second: planet1_19
+  - first:
+      213: 5607477181458391221
+    second: planet1_20
+  - first:
+      213: 3149192236194034518
+    second: planet1_21
+  - first:
+      213: 841430088919464424
+    second: planet1_22
+  - first:
+      213: -2645631694571411001
+    second: planet1_23
+  - first:
+      213: -1455182296918175471
+    second: planet1_24
+  - first:
+      213: 5807065722817970036
+    second: planet1_25
+  - first:
+      213: 7797008734119722124
+    second: planet1_26
+  - first:
+      213: 6486116653933593858
+    second: planet1_27
+  - first:
+      213: -8895696055779647905
+    second: planet1_28
+  - first:
+      213: 7772588115043861479
+    second: planet1_29
+  - first:
+      213: 1992321173107778258
+    second: planet1_30
+  - first:
+      213: 2796896303153372408
+    second: planet1_31
+  - first:
+      213: 252269208665903122
+    second: planet1_32
+  - first:
+      213: 5299187079730615072
+    second: planet1_33
+  - first:
+      213: -4586238667813521406
+    second: planet1_34
+  - first:
+      213: 5251993224334770323
+    second: planet1_35
+  - first:
+      213: 7560626561306292807
+    second: planet1_36
+  - first:
+      213: 8156767502131274578
+    second: planet1_37
+  - first:
+      213: 5663146556276128377
+    second: planet1_38
+  - first:
+      213: -64208237167744706
+    second: planet1_39
+  - first:
+      213: -5916221214583665992
+    second: planet1_40
+  - first:
+      213: 6852084814734638877
+    second: planet1_41
+  - first:
+      213: -2435893177401335554
+    second: planet1_42
+  - first:
+      213: -2541615371153940198
+    second: planet1_43
+  - first:
+      213: -3822983590797406817
+    second: planet1_44
+  - first:
+      213: -8149394587177643192
+    second: planet1_45
+  - first:
+      213: -638841405635657109
+    second: planet1_46
+  - first:
+      213: -2480089593950607334
+    second: planet1_47
+  - first:
+      213: 1711551126384654094
+    second: planet1_48
+  - first:
+      213: -8300434114258012225
+    second: planet1_49
+  - first:
+      213: -3970194166404790208
+    second: planet1_50
+  - first:
+      213: -5331628493933847070
+    second: planet1_51
+  - first:
+      213: 197237687951070446
+    second: planet1_52
+  - first:
+      213: -7067456794714075955
+    second: planet1_53
+  - first:
+      213: 2097240290230066375
+    second: planet1_54
+  - first:
+      213: 6361794142176079642
+    second: planet1_55
+  - first:
+      213: -9034844494146377841
+    second: planet1_56
+  - first:
+      213: 8796935096268163549
+    second: planet1_57
+  - first:
+      213: 2054634087157736608
+    second: planet1_58
+  - first:
+      213: 8070392999325785423
+    second: planet1_59
+  - first:
+      213: 5760782363889040255
+    second: planet1_60
+  - first:
+      213: -8311178181791742751
+    second: planet1_61
+  - first:
+      213: 7863837719410865106
+    second: planet1_62
+  - first:
+      213: 5683770459853579275
+    second: planet1_63
+  - first:
+      213: -4600774366320068353
+    second: planet1_64
+  - first:
+      213: -3837116527288615059
+    second: planet1_65
+  - first:
+      213: 3401667324817915486
+    second: planet1_66
+  - first:
+      213: -2852821676651288244
+    second: planet1_67
+  - first:
+      213: -2071133118340501617
+    second: planet1_68
+  - first:
+      213: -2087228158200546511
+    second: planet1_69
+  - first:
+      213: 3568712159465534832
+    second: planet1_70
+  - first:
+      213: 1666702019024045558
+    second: planet1_71
+  - first:
+      213: -3963865269145209535
+    second: planet1_72
+  - first:
+      213: 4774360885876340759
+    second: planet1_73
+  - first:
+      213: -1130456910178523568
+    second: planet1_74
+  - first:
+      213: 1821294375523325608
+    second: planet1_75
+  - first:
+      213: 1134581992960202232
+    second: planet1_76
+  - first:
+      213: -6934909669053337541
+    second: planet1_77
+  - first:
+      213: 3023394438471324101
+    second: planet1_78
+  - first:
+      213: -1498993832486614294
+    second: planet1_79
+  - first:
+      213: -2814492523826463458
+    second: planet1_80
+  - first:
+      213: 5752121824988624561
+    second: planet1_81
+  - first:
+      213: 730565271489115642
+    second: planet1_82
+  - first:
+      213: 1219763321832754565
+    second: planet1_83
+  - first:
+      213: 3453744425326867527
+    second: planet1_84
+  - first:
+      213: -2759451668408729588
+    second: planet1_85
+  - first:
+      213: 9153433236767494145
+    second: planet1_86
+  - first:
+      213: -4281091307243781128
+    second: planet1_87
+  - first:
+      213: 5703396954390522191
+    second: planet1_88
+  - first:
+      213: 8354057178780249123
+    second: planet1_89
+  - first:
+      213: -152379243571098362
+    second: planet1_90
+  - first:
+      213: -2810027245399358127
+    second: planet1_91
+  - first:
+      213: 1909084859597297255
+    second: planet1_92
+  - first:
+      213: 4575506050191014864
+    second: planet1_93
+  - first:
+      213: -104257661606541264
+    second: planet1_94
+  - first:
+      213: -128553093788649753
+    second: planet1_95
+  - first:
+      213: 374064566032692277
+    second: planet1_96
+  - first:
+      213: 2624674494380050678
+    second: planet1_97
+  - first:
+      213: 6120714650630815960
+    second: planet1_98
+  - first:
+      213: 1552523333749740538
+    second: planet1_99
+  - first:
+      213: -5118500027766611682
+    second: planet1_100
+  - first:
+      213: 2570210510690248066
+    second: planet1_101
+  - first:
+      213: 3471913246663552433
+    second: planet1_102
+  - first:
+      213: -4049171556851282073
+    second: planet1_103
+  - first:
+      213: -3276045792441757287
+    second: planet1_104
+  - first:
+      213: 6914013973402318825
+    second: planet1_105
+  - first:
+      213: 3913983555719260668
+    second: planet1_106
+  - first:
+      213: 1263732358720270275
+    second: planet1_107
+  - first:
+      213: -7666192206087222628
+    second: planet1_108
+  - first:
+      213: 1816712317433321066
+    second: planet1_109
+  - first:
+      213: 2139841488145537727
+    second: planet1_110
+  - first:
+      213: -4185946074738274265
+    second: planet1_111
+  - first:
+      213: 7901075003081635934
+    second: planet1_112
+  - first:
+      213: -6657936939417468797
+    second: planet1_113
+  - first:
+      213: -5299652068782848235
+    second: planet1_114
+  - first:
+      213: -4509203537097603262
+    second: planet1_115
+  - first:
+      213: 8633627006941492487
+    second: planet1_116
+  - first:
+      213: -5326636998319150583
+    second: planet1_117
+  - first:
+      213: 7816231862064543288
+    second: planet1_118
+  - first:
+      213: 7162605705746680687
+    second: planet1_119
+  - first:
+      213: -3610762351703483490
+    second: planet1_120
+  - first:
+      213: 9175668758221548000
+    second: planet1_121
+  - first:
+      213: -6884782889211394219
+    second: planet1_122
+  - first:
+      213: -2927498797680280922
+    second: planet1_123
+  - first:
+      213: -763528842583868705
+    second: planet1_124
+  - first:
+      213: 4722083772101648734
+    second: planet1_125
+  - first:
+      213: -7483119702134316433
+    second: planet1_126
+  - first:
+      213: 5030115638792002685
+    second: planet1_127
+  - first:
+      213: -1510143623424800757
+    second: planet1_128
+  - first:
+      213: -4754730651927329348
+    second: planet1_129
+  - first:
+      213: 454568558695463099
+    second: planet1_130
+  - first:
+      213: 3044321174954989495
+    second: planet1_131
+  - first:
+      213: 4907079213685736757
+    second: planet1_132
+  - first:
+      213: 3245466397788264555
+    second: planet1_133
+  - first:
+      213: 4883719762772505509
+    second: planet1_134
+  - first:
+      213: -1459410878177295283
+    second: planet1_135
+  - first:
+      213: -8415588159080807950
+    second: planet1_136
+  - first:
+      213: 1243801390537250332
+    second: planet1_137
+  - first:
+      213: 4573556745913214154
+    second: planet1_138
+  - first:
+      213: -2853234815752807511
+    second: planet1_139
+  - first:
+      213: -4011418529425214219
+    second: planet1_140
+  - first:
+      213: -3634833234774433286
+    second: planet1_141
+  - first:
+      213: -7427066224267958734
+    second: planet1_142
+  - first:
+      213: -5023283409261476605
+    second: planet1_143
+  - first:
+      213: 8253369451155494690
+    second: planet1_144
+  - first:
+      213: -2087411741751957844
+    second: planet1_145
+  - first:
+      213: 1257136888316232838
+    second: planet1_146
+  - first:
+      213: 1579298549094666784
+    second: planet1_147
+  - first:
+      213: 1653710875371464701
+    second: planet1_148
+  - first:
+      213: 6522103503280432354
+    second: planet1_149
+  - first:
+      213: -4740243428846483384
+    second: planet1_150
+  - first:
+      213: 8214943616430055355
+    second: planet1_151
+  - first:
+      213: 228934408972569993
+    second: planet1_152
+  - first:
+      213: -8648891313549206318
+    second: planet1_153
+  - first:
+      213: 7844833873533239268
+    second: planet1_154
+  - first:
+      213: 4412869483026416850
+    second: planet1_155
+  - first:
+      213: -5479068807301251333
+    second: planet1_156
+  - first:
+      213: 9139899695201431405
+    second: planet1_157
+  - first:
+      213: -7828773971852087304
+    second: planet1_158
+  - first:
+      213: -2103076087923914207
+    second: planet1_159
+  - first:
+      213: -3726268246531139875
+    second: planet1_160
+  - first:
+      213: 6395620283049162727
+    second: planet1_161
+  - first:
+      213: 1575545376695798928
+    second: planet1_162
+  - first:
+      213: -7767575953008973176
+    second: planet1_163
+  - first:
+      213: -8343229128842290446
+    second: planet1_164
+  - first:
+      213: -4169818129922565698
+    second: planet1_165
+  - first:
+      213: -6201769785688586963
+    second: planet1_166
+  - first:
+      213: 8687276693754416137
+    second: planet1_167
+  - first:
+      213: 2112222415300592732
+    second: planet1_168
+  - first:
+      213: -46606210809665087
+    second: planet1_169
+  - first:
+      213: 5228122068669947546
+    second: planet1_170
+  - first:
+      213: 8362367138448306002
+    second: planet1_171
+  - first:
+      213: -8038939421783600444
+    second: planet1_172
+  - first:
+      213: 5911705865472467410
+    second: planet1_173
+  - first:
+      213: 4076390966123421912
+    second: planet1_174
+  - first:
+      213: -5931139157348079265
+    second: planet1_175
+  - first:
+      213: -7574651301834208618
+    second: planet1_176
+  - first:
+      213: -5704371135632726039
+    second: planet1_177
+  - first:
+      213: 1540475955859364505
+    second: planet1_178
+  - first:
+      213: 9220476469901679884
+    second: planet1_179
+  - first:
+      213: 180981953591060860
+    second: planet1_180
+  - first:
+      213: 1408326955174346940
+    second: planet1_181
+  - first:
+      213: 7315869608105539537
+    second: planet1_182
+  - first:
+      213: -8039338841709366548
+    second: planet1_183
+  - first:
+      213: 3774596894395404437
+    second: planet1_184
+  - first:
+      213: -9058033622249674888
+    second: planet1_185
+  - first:
+      213: -1992692142442362878
+    second: planet1_186
+  - first:
+      213: -818597662191340094
+    second: planet1_187
+  - first:
+      213: 625848698257626842
+    second: planet1_188
+  - first:
+      213: 8617046612469766832
+    second: planet1_189
+  - first:
+      213: 2947111762434549362
+    second: planet1_190
+  - first:
+      213: 6294529593508179142
+    second: planet1_191
+  - first:
+      213: -5039465329101193223
+    second: planet1_192
+  - first:
+      213: -144020834135584479
+    second: planet1_193
+  - first:
+      213: 6129172810957199770
+    second: planet1_194
+  - first:
+      213: -5305593959283225781
+    second: planet1_195
+  - first:
+      213: -807296514634820906
+    second: planet1_196
+  - first:
+      213: 4914955973294541322
+    second: planet1_197
+  - first:
+      213: -8413114677603786354
+    second: planet1_198
+  - first:
+      213: -8641380089160267930
+    second: planet1_199
+  - first:
+      213: 5699677349243231516
+    second: planet1_200
+  - first:
+      213: 6771848885731124230
+    second: planet1_201
+  - first:
+      213: -1669735041747109530
+    second: planet1_202
+  - first:
+      213: -2232910201459810214
+    second: planet1_203
+  - first:
+      213: -1559729649619564548
+    second: planet1_204
+  - first:
+      213: -7357057835725903268
+    second: planet1_205
+  - first:
+      213: 7252074727705285822
+    second: planet1_206
+  - first:
+      213: -6165580031631653583
+    second: planet1_207
+  - first:
+      213: 5205256547799306137
+    second: planet1_208
+  - first:
+      213: -8876467016847279295
+    second: planet1_209
+  - first:
+      213: 6770521150081003286
+    second: planet1_210
+  - first:
+      213: 7399790420731536871
+    second: planet1_211
+  - first:
+      213: 2267081949386398802
+    second: planet1_212
+  - first:
+      213: 1538046116722840307
+    second: planet1_213
+  - first:
+      213: 5812062639350028155
+    second: planet1_214
+  - first:
+      213: -7536630787798955467
+    second: planet1_215
+  - first:
+      213: 544957372983100016
+    second: planet1_216
+  - first:
+      213: 5299141201162895240
+    second: planet1_217
+  - first:
+      213: -204423870892892055
+    second: planet1_218
+  - first:
+      213: 3880548805006869170
+    second: planet1_219
+  - first:
+      213: 1929321618803380420
+    second: planet1_220
+  - first:
+      213: -5537803324107987826
+    second: planet1_221
+  - first:
+      213: -8950732243608205179
+    second: planet1_222
+  - first:
+      213: -5766434202439362050
+    second: planet1_223
+  - first:
+      213: 2741991267966149312
+    second: planet1_224
+  - first:
+      213: 3112790890522517852
+    second: planet1_225
+  - first:
+      213: 6220466066569826670
+    second: planet1_226
+  - first:
+      213: 3216717093205660664
+    second: planet1_227
+  - first:
+      213: -6683250131779257293
+    second: planet1_228
+  - first:
+      213: -6084439180143113037
+    second: planet1_229
+  - first:
+      213: 2242761127926843919
+    second: planet1_230
+  - first:
+      213: -445318106578937535
+    second: planet1_231
+  - first:
+      213: -3673253901789021008
+    second: planet1_232
+  - first:
+      213: -1967530870593485643
+    second: planet1_233
+  - first:
+      213: -3942523625766153956
+    second: planet1_234
+  - first:
+      213: -6005823534937694171
+    second: planet1_235
+  - first:
+      213: 9038672980723083517
+    second: planet1_236
+  - first:
+      213: 370629612090748357
+    second: planet1_237
+  - first:
+      213: -3922173156722795855
+    second: planet1_238
+  - first:
+      213: 86993564722247952
+    second: planet1_239
+  - first:
+      213: -812490684544054068
+    second: planet1_240
+  - first:
+      213: 5941257917954451203
+    second: planet1_241
+  - first:
+      213: 1636224217998948142
+    second: planet1_242
+  - first:
+      213: -8515843403192750386
+    second: planet1_243
+  - first:
+      213: -4504289191740622278
+    second: planet1_244
+  - first:
+      213: 4760833993932037527
+    second: planet1_245
+  - first:
+      213: -2256989172917664376
+    second: planet1_246
+  - first:
+      213: -2090709185159199993
+    second: planet1_247
+  - first:
+      213: 3399258543653221308
+    second: planet1_248
+  - first:
+      213: 1257631529885300275
+    second: planet1_249
+  - first:
+      213: 5522691706967539383
+    second: planet1_250
+  - first:
+      213: 1639296051172658943
+    second: planet1_251
+  - first:
+      213: 1169459932863294249
+    second: planet1_252
+  - first:
+      213: -8120155800282710616
+    second: planet1_253
+  - first:
+      213: 935595296665736719
+    second: planet1_254
+  - first:
+      213: 7896395385334139906
+    second: planet1_255
+  - first:
+      213: -6312289394232720482
+    second: planet1_256
+  - first:
+      213: 2902380246522154554
+    second: planet1_257
+  - first:
+      213: 8195431769956452558
+    second: planet1_258
+  - first:
+      213: 7999500862476296443
+    second: planet1_259
+  - first:
+      213: 3423691618809746788
+    second: planet1_260
+  - first:
+      213: 3956401415421841192
+    second: planet1_261
+  - first:
+      213: 3199506782735341624
+    second: planet1_262
+  - first:
+      213: 5716949909993083091
+    second: planet1_263
+  - first:
+      213: 4927282441168905895
+    second: planet1_264
+  - first:
+      213: 7142615634627193689
+    second: planet1_265
+  - first:
+      213: -913892466285061771
+    second: planet1_266
+  - first:
+      213: -5310275097815639630
+    second: planet1_267
+  - first:
+      213: 8778177234907126730
+    second: planet1_268
+  - first:
+      213: 561765704043045525
+    second: planet1_269
+  - first:
+      213: 5497998731503736863
+    second: planet1_270
+  - first:
+      213: 1554301117726977941
+    second: planet1_271
+  - first:
+      213: -2938158237731924347
+    second: planet1_272
+  - first:
+      213: 5208838044711920124
+    second: planet1_273
+  - first:
+      213: 1823416341319560123
+    second: planet1_274
+  - first:
+      213: 4649962959763730913
+    second: planet1_275
+  - first:
+      213: -794703597408493131
+    second: planet1_276
+  - first:
+      213: 2246916203068014081
+    second: planet1_277
+  - first:
+      213: 1572625063750988180
+    second: planet1_278
+  - first:
+      213: -4452724546485424119
+    second: planet1_279
+  - first:
+      213: -3429534787336984672
+    second: planet1_280
+  - first:
+      213: 1401829145911710585
+    second: planet1_281
+  - first:
+      213: -6714446105536579918
+    second: planet1_282
+  - first:
+      213: -4106171723738332626
+    second: planet1_283
+  - first:
+      213: -5247594855897683742
+    second: planet1_284
+  - first:
+      213: 2146438081128735680
+    second: planet1_285
+  - first:
+      213: 7029721320661241563
+    second: planet1_286
+  - first:
+      213: -6822804795513529519
+    second: planet1_287
+  - first:
+      213: 647624772914210435
+    second: planet1_288
+  - first:
+      213: 2688223238068117006
+    second: planet1_289
+  - first:
+      213: -2215471398695388977
+    second: planet1_290
+  - first:
+      213: -5612479761729767902
+    second: planet1_291
+  - first:
+      213: 8242666763476644137
+    second: planet1_292
+  - first:
+      213: -8973100711604057713
+    second: planet1_293
+  - first:
+      213: -1522532893989685748
+    second: planet1_294
+  - first:
+      213: 612015523289185636
+    second: planet1_295
+  - first:
+      213: 7659033752554608727
+    second: planet1_296
+  - first:
+      213: 365535831657158628
+    second: planet1_297
+  - first:
+      213: -2499257751219607299
+    second: planet1_298
+  - first:
+      213: 1456256777567595803
+    second: planet1_299
+  - first:
+      213: -2088703202690307999
+    second: planet1_300
+  - first:
+      213: 8107456112804288118
+    second: planet1_301
+  - first:
+      213: 6347633580053106785
+    second: planet1_302
+  - first:
+      213: -1669681015294636473
+    second: planet1_303
+  - first:
+      213: 1730334085652191471
+    second: planet1_304
+  - first:
+      213: 6529036317539722154
+    second: planet1_305
+  - first:
+      213: -1028339834483278242
+    second: planet1_306
+  - first:
+      213: -2381527568298253484
+    second: planet1_307
+  - first:
+      213: -7377088484320017273
+    second: planet1_308
+  - first:
+      213: 2916331672673064917
+    second: planet1_309
+  - first:
+      213: 4184483785566135218
+    second: planet1_310
+  - first:
+      213: -5056203051462046570
+    second: planet1_311
+  - first:
+      213: -5858487369875954788
+    second: planet1_312
+  - first:
+      213: 2408791039803304035
+    second: planet1_313
+  - first:
+      213: 3894967724847220789
+    second: planet1_314
+  - first:
+      213: -2231977089931007796
+    second: planet1_315
+  - first:
+      213: 231509381374356748
+    second: planet1_316
+  - first:
+      213: -408155111487680287
+    second: planet1_317
+  - first:
+      213: -1244006292922555916
+    second: planet1_318
+  - first:
+      213: -2475142167735267703
+    second: planet1_319
+  - first:
+      213: 4577030765124627552
+    second: planet1_320
+  - first:
+      213: 1708555077649267706
+    second: planet1_321
+  - first:
+      213: 5062705490761812333
+    second: planet1_322
+  - first:
+      213: 9112339713110554095
+    second: planet1_323
+  - first:
+      213: 5313595616298142556
+    second: planet1_324
+  - first:
+      213: 4742835643043768317
+    second: planet1_325
+  - first:
+      213: -3058543655339224987
+    second: planet1_326
+  - first:
+      213: -2115798751868259829
+    second: planet1_327
+  - first:
+      213: -454123918683730298
+    second: planet1_328
+  - first:
+      213: -7868592890221382077
+    second: planet1_329
+  - first:
+      213: -3631638925614978930
+    second: planet1_330
+  - first:
+      213: -444528212604113586
+    second: planet1_331
+  - first:
+      213: -8410441995020970116
+    second: planet1_332
+  - first:
+      213: 4614266707013097748
+    second: planet1_333
+  - first:
+      213: 3445485007782855974
+    second: planet1_334
+  - first:
+      213: -7462171109162039307
+    second: planet1_335
+  - first:
+      213: 968618133616235457
+    second: planet1_336
+  - first:
+      213: 1606447136664067704
+    second: planet1_337
+  - first:
+      213: -7785750841713845655
+    second: planet1_338
+  - first:
+      213: -6760391354424992953
+    second: planet1_339
+  - first:
+      213: -8486202503910756521
+    second: planet1_340
+  - first:
+      213: -5259456295366784970
+    second: planet1_341
+  - first:
+      213: -4274245395968583478
+    second: planet1_342
+  - first:
+      213: -1514342728507868732
+    second: planet1_343
+  - first:
+      213: -6248661426383036814
+    second: planet1_344
+  - first:
+      213: -2818357245524615030
+    second: planet1_345
+  - first:
+      213: -310913321388705373
+    second: planet1_346
+  - first:
+      213: 6046097576916945769
+    second: planet1_347
+  - first:
+      213: 3883673894396275394
+    second: planet1_348
+  - first:
+      213: -4206205469516461597
+    second: planet1_349
+  - first:
+      213: 8873309934762996847
+    second: planet1_350
+  - first:
+      213: 8728555431066343766
+    second: planet1_351
+  - first:
+      213: -402088382237740057
+    second: planet1_352
+  - first:
+      213: -7854917760527579024
+    second: planet1_353
+  - first:
+      213: 4298200303628822118
+    second: planet1_354
+  - first:
+      213: 3190510962465726745
+    second: planet1_355
+  - first:
+      213: 523872019912685542
+    second: planet1_356
+  - first:
+      213: 1761553272538697240
+    second: planet1_357
+  - first:
+      213: -3398640914573299820
+    second: planet1_358
+  - first:
+      213: -2195150841192721286
+    second: planet1_359
+  - first:
+      213: -1132585242608067520
+    second: planet1_360
+  - first:
+      213: -196955256025122416
+    second: planet1_361
+  - first:
+      213: 5004781480614489785
+    second: planet1_362
+  - first:
+      213: 6435620943742835997
+    second: planet1_363
+  - first:
+      213: -1569590291644790087
+    second: planet1_364
+  - first:
+      213: 3681960563131110944
+    second: planet1_365
+  - first:
+      213: -8865381924592804810
+    second: planet1_366
+  - first:
+      213: 3490265475376024763
+    second: planet1_367
+  - first:
+      213: 6867808844509704970
+    second: planet1_368
+  - first:
+      213: 4714711334711143807
+    second: planet1_369
+  - first:
+      213: -1981810138472450570
+    second: planet1_370
+  - first:
+      213: -1136908319524553567
+    second: planet1_371
+  - first:
+      213: 3799876087358484447
+    second: planet1_372
+  - first:
+      213: -7536938237981545612
+    second: planet1_373
+  - first:
+      213: -4241621510900519755
+    second: planet1_374
+  - first:
+      213: -538240340862689506
+    second: planet1_375
+  - first:
+      213: -6759554881476124895
+    second: planet1_376
+  - first:
+      213: -3353747982169019406
+    second: planet1_377
+  - first:
+      213: 5595755877304922526
+    second: planet1_378
+  - first:
+      213: -7339194739873010688
+    second: planet1_379
+  - first:
+      213: 3661573257243725824
+    second: planet1_380
+  - first:
+      213: -1071354451737506796
+    second: planet1_381
+  - first:
+      213: 6971743233584676389
+    second: planet1_382
+  - first:
+      213: -3526828538911475226
+    second: planet1_383
+  - first:
+      213: 7578237509863602439
+    second: planet1_384
+  - first:
+      213: -201419484764174223
+    second: planet1_385
+  - first:
+      213: 9028513920206811116
+    second: planet1_386
+  - first:
+      213: 880914082312779186
+    second: planet1_387
+  - first:
+      213: -1080026131651158071
+    second: planet1_388
+  - first:
+      213: 8319654731899354859
+    second: planet1_389
+  - first:
+      213: -2907951565517964662
+    second: planet1_390
+  - first:
+      213: -465213223273020737
+    second: planet1_391
+  - first:
+      213: 8927427680762033069
+    second: planet1_392
+  - first:
+      213: -4141138714274068571
+    second: planet1_393
+  - first:
+      213: -4712832781908706251
+    second: planet1_394
+  - first:
+      213: -9131131128572575634
+    second: planet1_395
+  - first:
+      213: 6522370284760540714
+    second: planet1_396
+  - first:
+      213: 478303900337121847
+    second: planet1_397
+  - first:
+      213: -5805979782577905777
+    second: planet1_398
+  - first:
+      213: -615798695750932386
+    second: planet1_399
+  - first:
+      213: -8873645839549575591
+    second: planet1_400
+  - first:
+      213: 4450162423569089358
+    second: planet1_401
+  - first:
+      213: 7643595424402065602
+    second: planet1_402
+  - first:
+      213: 5489046496386615288
+    second: planet1_403
+  - first:
+      213: -818308445059811011
+    second: planet1_404
+  - first:
+      213: -122167641259188296
+    second: planet1_405
+  - first:
+      213: 10182733678607654
+    second: planet1_406
+  - first:
+      213: 8713242531289157357
+    second: planet1_407
+  - first:
+      213: -2953236018764044252
+    second: planet1_408
+  - first:
+      213: -2991603812046295314
+    second: planet1_409
+  - first:
+      213: -6083788618523091565
+    second: planet1_410
+  - first:
+      213: 7739512987228397758
+    second: planet1_411
+  - first:
+      213: 8358775736302987502
+    second: planet1_412
+  - first:
+      213: -7139227349611087227
+    second: planet1_413
+  - first:
+      213: -7428669982216491140
+    second: planet1_414
+  - first:
+      213: -4135056910540547612
+    second: planet1_415
+  - first:
+      213: -2645917353268532769
+    second: planet1_416
+  - first:
+      213: 69877241991194528
+    second: planet1_417
+  - first:
+      213: 9079890406465246173
+    second: planet1_418
+  - first:
+      213: 400137340247027730
+    second: planet1_419
+  - first:
+      213: 2164910915645589286
+    second: planet1_420
+  - first:
+      213: 2162948961114149007
+    second: planet1_421
+  - first:
+      213: -7812275678222697298
+    second: planet1_422
+  - first:
+      213: -5518230443045366748
+    second: planet1_423
+  - first:
+      213: -3857149882613260792
+    second: planet1_424
+  - first:
+      213: -1111571686727746689
+    second: planet1_425
+  - first:
+      213: -4039097924535748146
+    second: planet1_426
+  - first:
+      213: -3964593243964107098
+    second: planet1_427
+  - first:
+      213: 1331193152738840045
+    second: planet1_428
+  - first:
+      213: -3872110266093800935
+    second: planet1_429
+  - first:
+      213: -8284863212418637497
+    second: planet1_430
+  - first:
+      213: 4266566760926084091
+    second: planet1_431
+  - first:
+      213: 8344408519366879896
+    second: planet1_432
+  - first:
+      213: 7351031677268346298
+    second: planet1_433
+  - first:
+      213: 5491712688291738399
+    second: planet1_434
+  - first:
+      213: -296408665141056749
+    second: planet1_435
+  - first:
+      213: 1206360088900843893
+    second: planet1_436
+  - first:
+      213: -8990413687111625195
+    second: planet1_437
+  - first:
+      213: -2319374230108942846
+    second: planet1_438
+  - first:
+      213: 1430882710931575065
+    second: planet1_439
+  - first:
+      213: -4862727237752371757
+    second: planet1_440
+  - first:
+      213: 6555129128966208528
+    second: planet1_441
+  - first:
+      213: -4786707758500242158
+    second: planet1_442
+  - first:
+      213: 6984108394772778723
+    second: planet1_443
+  - first:
+      213: 3994844189614029293
+    second: planet1_444
+  - first:
+      213: 4021267371418179561
+    second: planet1_445
+  - first:
+      213: -2442466969680987946
+    second: planet1_446
+  - first:
+      213: 595168390268010883
+    second: planet1_447
+  - first:
+      213: -4404441750058207711
+    second: planet1_448
+  - first:
+      213: 3490334140435765132
+    second: planet1_449
+  - first:
+      213: 3189538002451796535
+    second: planet1_450
+  - first:
+      213: 7981562970448201309
+    second: planet1_451
+  - first:
+      213: -1566457226093768453
+    second: planet1_452
+  - first:
+      213: 8694178967564863925
+    second: planet1_453
+  - first:
+      213: 354765981470733376
+    second: planet1_454
+  - first:
+      213: -1974591197115050184
+    second: planet1_455
+  - first:
+      213: -592438963450151913
+    second: planet1_456
+  - first:
+      213: -3548126708227807248
+    second: planet1_457
+  - first:
+      213: 1416948807645423972
+    second: planet1_458
+  - first:
+      213: 5489862956353881281
+    second: planet1_459
+  - first:
+      213: 5279215861485318025
+    second: planet1_460
+  - first:
+      213: -3920092883451332885
+    second: planet1_461
+  - first:
+      213: 2215174619712264322
+    second: planet1_462
+  - first:
+      213: 3332896637048990401
+    second: planet1_463
+  - first:
+      213: 4235854741098583254
+    second: planet1_464
+  - first:
+      213: -9081562598640258078
+    second: planet1_465
+  - first:
+      213: 2216179006788356659
+    second: planet1_466
+  - first:
+      213: -3636909762063280735
+    second: planet1_467
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: planet1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba434b4b49fdb8f0800000000000000
+      internalID: -522987879924544839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6160ab15d55cf10800000000000000
+      internalID: 2289338591182460669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34673f477940d410800000000000000
+      internalID: 1499779452693341242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52f71029299e2540800000000000000
+      internalID: 4985090239456866908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a1ec64ad7089470800000000000000
+      internalID: 8401473738931837462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086aea5b5344c9910800000000000000
+      internalID: 1845424944787138176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5161cf4859f5970800000000000000
+      internalID: 8745873399774320104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad3bb9151b6dc320800000000000000
+      internalID: 2579835899923348911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b9a9a56ffa1dca0800000000000000
+      internalID: -5993816156436522105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c6e2d09ebe84a00800000000000000
+      internalID: 741101524883500137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1114ee9222bb63430800000000000000
+      internalID: 3762400294121390353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b1ae0ec4faebd10800000000000000
+      internalID: 2143343217400748907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_12
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead4bfb8455d07bd0800000000000000
+      internalID: -2634371222909268562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_13
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea752b2230591b760800000000000000
+      internalID: 7471917097483917230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_14
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf6a7d7d772fbeb0800000000000000
+      internalID: -4701996066021937218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_15
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6800cd336eba9c0800000000000000
+      internalID: -3914782340659771741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_16
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e987c59751a0598d0800000000000000
+      internalID: -2840352902640535394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_17
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7724f2a649c79600800000000000000
+      internalID: 475069590929680255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_18
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03669d93880972c0800000000000000
+      internalID: -4433502996791926004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_19
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e8cffc7c9be2260800000000000000
+      internalID: 7074796332484693570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_20
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0afee69c2c1dd40800000000000000
+      internalID: 5607477181458391221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_21
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65373c757ad24bb20800000000000000
+      internalID: 3149192236194034518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_22
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9be51353c5dab00800000000000000
+      internalID: 841430088919464424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_23
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c96e8eadf3d84bd0800000000000000
+      internalID: -2645631694571411001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_24
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11151cc29672ecbe0800000000000000
+      internalID: -1455182296918175471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_25
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f79ebf187d69050800000000000000
+      internalID: 5807065722817970036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_26
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8cf2d3222a843c60800000000000000
+      internalID: 7797008734119722124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_27
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20505795bb0530a50800000000000000
+      internalID: 6486116653933593858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_28
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e196591932c8480800000000000000
+      internalID: -8895696055779647905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_29
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e3cc9ea5b7cddb60800000000000000
+      internalID: 7772588115043861479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_30
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d224991d8526ab10800000000000000
+      internalID: 1992321173107778258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_31
+      rect:
+        serializedVersion: 2
+        x: 3968
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc5f0f7e5290d620800000000000000
+      internalID: 2796896303153372408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_32
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210dc4a328d308300800000000000000
+      internalID: 252269208665903122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_33
+      rect:
+        serializedVersion: 2
+        x: 4224
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023dead929e7a8940800000000000000
+      internalID: 5299187079730615072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_34
+      rect:
+        serializedVersion: 2
+        x: 4352
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20870d50b386a50c0800000000000000
+      internalID: -4586238667813521406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_35
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3908b33e204d2e840800000000000000
+      internalID: 5251993224334770323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_36
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7427b02bccdbce860800000000000000
+      internalID: 7560626561306292807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_37
+      rect:
+        serializedVersion: 2
+        x: 4736
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2532cf7a3d8a23170800000000000000
+      internalID: 8156767502131274578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_38
+      rect:
+        serializedVersion: 2
+        x: 4864
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ab0ddc9c9879e40800000000000000
+      internalID: 5663146556276128377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_39
+      rect:
+        serializedVersion: 2
+        x: 4992
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3966ffc2f2eb1ff0800000000000000
+      internalID: -64208237167744706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_40
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba4c1c962c55eda0800000000000000
+      internalID: -5916221214583665992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_41
+      rect:
+        serializedVersion: 2
+        x: 5248
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f3b19c5de771f50800000000000000
+      internalID: 6852084814734638877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_42
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef02232af08f13ed0800000000000000
+      internalID: -2435893177401335554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_43
+      rect:
+        serializedVersion: 2
+        x: 5504
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1162b6394e5abcd0800000000000000
+      internalID: -2541615371153940198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_44
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d8f50eda802fac0800000000000000
+      internalID: -3822983590797406817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_45
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84319c0ecc887ee80800000000000000
+      internalID: -8149394587177643192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_46
+      rect:
+        serializedVersion: 2
+        x: 5888
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62864550216227f0800000000000000
+      internalID: -638841405635657109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_47
+      rect:
+        serializedVersion: 2
+        x: 6016
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a186e6587a3f49dd0800000000000000
+      internalID: -2480089593950607334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_48
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07b3176ea6a0c710800000000000000
+      internalID: 1711551126384654094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1_49
+      rect:
+        serializedVersion: 2
+        x: 6272
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7fd12962feecc80800000000000000
+      internalID: -8300434114258012225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
