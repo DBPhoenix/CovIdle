@@ -4,81 +4,60 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField]
-    int _durationBetweenGenerations;
-    [SerializeField]
-    int _meetingsPerInfected;
+    public static GameManager Instance;
 
-    [Header("Stats")]
     [SerializeField]
-    float _infected = 1;
-    [SerializeField]
-    float _deaths = 0;
-    [SerializeField]
-    float _mutations = 0;
+    private int _generationRepeatRate;
 
-    [Header("Rates")]
-    [SerializeField, Range(0f, 1f)]
-    float _deathRate;
-    [SerializeField, Range(0f, 1f)]
-    float _infectionRate;
+    private Dictionary<string, Planet> _planets = new Dictionary<string, Planet>();
 
-    [Space]
-    [SerializeField]
-    UI_Text[] _uiElements;
-
-    float _deathsGain = 0;
-    float _infectedGain = 0;
-
-    Dictionary<string, UI_Text> _uiByName = new Dictionary<string, UI_Text>();
-
-    void Awake()
+    private void Awake()
     {
-        foreach (UI_Text ui in _uiElements)
+        if (Instance == null)
         {
-            _uiByName.Add(ui.gameObject.name, ui);
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        InvokeRepeating("NextGeneration", 0, _durationBetweenGenerations);
+        Transform map = GameObject.FindWithTag("Map").transform;
+
+        foreach (Transform child in map)
+        {
+            PlanetData data = child.GetComponent<UI_Planet>().PlanetData;
+
+            _planets[data.Name] = new Planet(data);
+        }
+
+        InvokeRepeating("NextGeneration", 0, _generationRepeatRate);
     }
 
-    void Update()
+    public void OpenPlanet(PlanetData data)
     {
-        IncreaseInfected(_infectedGain * Time.deltaTime);
-        IncreaseDeaths(_deathsGain * Time.deltaTime);
-
-        GenerateMutations();
+        PlanetCanvasManager.Instance.Open(_planets[data.Name]);
     }
 
-    void GenerateMutations()
+    private void NextGeneration()
     {
-        _mutations += Mathf.Log(_infected) * Time.deltaTime;
+        float totalInfected = 0;
+        float totalDeaths = 0;
 
-        _uiByName["Mutations"].SetValue(((int) _mutations).ToString());
-    }
+        foreach (Planet planet in _planets.Values)
+        {
+            planet.NextGeneration();
 
-    void IncreaseDeaths(float amount)
-    {
-        _infected -= amount;
-        _deaths += amount;
+            totalInfected += planet.Infected;
+            totalDeaths += planet.Deaths;
+        }
 
-        _uiByName["Deaths"].SetValue(((int) _deaths).ToString());
-    }
+        UI_Overview.Instance.GenerateMutations(totalInfected);
 
-    void IncreaseInfected(float amount)
-    {
-        _infected += amount;
-
-        _uiByName["Infected"].SetValue(((int) _infected).ToString());
-    }
-
-    void NextGeneration()
-    {
-        _deathsGain = (_infected * _deathRate) / _durationBetweenGenerations;
-        _infectedGain = (_infected * _meetingsPerInfected * _infectionRate) / _durationBetweenGenerations;
+        PlanetCanvasManager.Instance.UpdateStats();
+        UI_Overview.Instance.UpdateStats((int) totalInfected, (int) totalDeaths);
     }
 }

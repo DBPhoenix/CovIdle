@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+[RequireComponent(typeof(TextMeshProUGUI))]
 public class UI_Text : MonoBehaviour
 {
     [SerializeField]
@@ -10,13 +11,18 @@ public class UI_Text : MonoBehaviour
 
     private TextMeshProUGUI _text;
 
-    private void Start()
+    private void Awake()
     {
         _text = GetComponent<TextMeshProUGUI>();
     }
 
     public void SetValue(string value)
     {
-        _text.text = $"{_prefix}: {value}";
+        _text.text = $"{_prefix}{value}";
+    }
+
+    public void SetValue(int value)
+    {
+        _text.text = $"{_prefix}{value.ToString()}";
     }
 }
