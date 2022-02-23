@@ -9,5 +9,6 @@ public class UI_PlanetEditor : Editor
         UI_Planet planet = (UI_Planet) target;
 
         planet.PlanetData = (PlanetData) EditorGUILayout.ObjectField("Planet", planet.PlanetData, typeof(PlanetData), false);
+        planet.Active = EditorGUILayout.Toggle("Active", planet.Active);
     }
 }

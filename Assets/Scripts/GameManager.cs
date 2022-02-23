@@ -9,6 +9,14 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private int _generationRepeatRate;
 
+    [Header("Starting Values")]
+    [SerializeField]
+    private float _meetingsPerInfected;
+    [SerializeField]
+    private float _infectionRate;
+    [SerializeField]
+    private float _optimalTemperature;
+
     private Dictionary<string, Planet> _planets = new Dictionary<string, Planet>();
 
     private void Awake()
@@ -21,6 +29,11 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        Perks.MeetingsPerInfected = _meetingsPerInfected;
+        Perks.InfectionRate = _infectionRate;
+        Perks.MinOptimalTemperature = _optimalTemperature;
+        Perks.MaxOptimalTemperature = _optimalTemperature;
     }
 
     private void Start()
@@ -29,7 +42,14 @@ public class GameManager : MonoBehaviour
 
         foreach (Transform child in map)
         {
-            PlanetData data = child.GetComponent<UI_Planet>().PlanetData;
+            UI_Planet planet = child.GetComponent<UI_Planet>();
+
+            if (!planet.Active)
+            {
+                continue;
+            }
+
+            PlanetData data = planet.PlanetData;
 
             _planets[data.Name] = new Planet(data);
         }

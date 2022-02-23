@@ -6,25 +6,29 @@ public class Planet
 
     public float Infected = 100;
     public float Deaths = 0;
-    public float Mutations = 0;
 
-    private float _deathRate = 0.2f;
-    private float _mutationRate = 0.2f;
-    private float _infectedRate = 0.2f;
+    private float _deathRate = 0.05f;
+
+    [HideInInspector]
+    public float Temperature;
 
     public Planet(PlanetData data)
     {
         Data = data;
+
+        Temperature = data.Temperature;
     }
 
     public void NextGeneration()
     {
         float newDeaths = Infected * _deathRate;
 
-        Infected += Infected * _infectedRate;
-        Deaths += newDeaths;
-        Mutations += Infected * _mutationRate;
+        float temperatureDiff = Mathf.Min(Mathf.Abs(_temperature - Perks.MinOptimalTemperature), Mathf.Abs(_temperature - Perks.MaxOptimalTemperature));
+        float temperatureModifier = Mathf.Pow(1 - 0.05f, temperatureDiff / 0.25f);
 
+        Infected += Infected * Perks.InfectionRate * temperatureModifier * Data.MeetingsPerInfected;
+
+        Deaths += newDeaths;
         Infected -= newDeaths;
     }
 }

@@ -4,9 +4,13 @@ using UnityEngine;
 public class PlanetData : ScriptableObject
 {
     public string Name;
+    public int PopulationSize;
+    public Sprite Map;
 
-    [HideInInspector]
-    public float Deaths;
-    [HideInInspector]
-    public float Infected;
+    [Space]
+    public float Temperature;
+    public float MeetingsPerInfected;
+
+    [Space]
+    public float[] ResistanceDistribution = new float[11];
 }

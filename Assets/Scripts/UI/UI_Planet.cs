@@ -6,10 +6,15 @@ using UnityEngine.UI;
 public class UI_Planet : Button
 {
     public PlanetData PlanetData;
+    public bool Active;
 
     private new void Start()
     {
+        gameObject.SetActive(Active);
+
         onClick.AddListener(OnClick);
+
+        base.Start();
     }
 
     public void OnClick()
