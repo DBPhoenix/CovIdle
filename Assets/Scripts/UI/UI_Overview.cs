@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,7 +10,7 @@ public class UI_Overview : MonoBehaviour
     [SerializeField]
     private UI_Text[] _uiElements;
 
-    private float _mutations = 0;
+    private double _mutations = 0;
     private Dictionary<string, UI_Text> _uiByName = new Dictionary<string, UI_Text>();
 
     private void Awake()
@@ -49,16 +50,16 @@ public class UI_Overview : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void UpdateStats(int infected, int deaths)
+    public void UpdateStats(double infected, int deaths)
     {
-        _uiByName["Infected"].SetValue(infected);
+        _uiByName["Infected"].SetValue(infected.ToString());
         _uiByName["Deaths"].SetValue(deaths);
         _uiByName["Mutations"].SetValue((int) _mutations);
     }
 
-    public void GenerateMutations(float infected)
+    public void GenerateMutations(double infected)
     {
-        _mutations += Mathf.Log(infected);
+        _mutations += Math.Log(infected);
     }
 
 /*

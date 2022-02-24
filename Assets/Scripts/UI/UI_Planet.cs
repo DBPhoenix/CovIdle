@@ -19,8 +19,6 @@ public class UI_Planet : Button
 
     public void OnClick()
     {
-        UI_Overview.Instance.Close();
-
         GameManager.Instance.OpenPlanet(PlanetData);
     }
 }

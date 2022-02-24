@@ -57,6 +57,14 @@ public class GameManager : MonoBehaviour
         InvokeRepeating("NextGeneration", 0, _generationRepeatRate);
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            UI_Tooltip.Instance.Hide();
+        }
+    }
+
     public void OpenPlanet(PlanetData data)
     {
         PlanetCanvasManager.Instance.Open(_planets[data.Name]);
@@ -64,7 +72,7 @@ public class GameManager : MonoBehaviour
 
     private void NextGeneration()
     {
-        float totalInfected = 0;
+        double totalInfected = 0;
         float totalDeaths = 0;
 
         foreach (Planet planet in _planets.Values)
@@ -78,6 +86,6 @@ public class GameManager : MonoBehaviour
         UI_Overview.Instance.GenerateMutations(totalInfected);
 
         PlanetCanvasManager.Instance.UpdateStats();
-        UI_Overview.Instance.UpdateStats((int) totalInfected, (int) totalDeaths);
+        UI_Overview.Instance.UpdateStats(totalInfected, (int) totalDeaths);
     }
 }

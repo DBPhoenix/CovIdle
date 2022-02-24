@@ -33,6 +33,11 @@ public class PlanetCanvasManager : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    private void Update()
+    {
+        QuickFix();
+    }
+
     public void Open(Planet planet)
     {
         Planet = planet;
@@ -44,12 +49,25 @@ public class PlanetCanvasManager : MonoBehaviour
         UpdateStats();
     }
 
+    public void Close()
+    {
+        gameObject.SetActive(false);
+    }
+
     public void UpdateStats()
     {
         if (gameObject.activeSelf)
         {
             _uiByName["Infected"].SetValue((int) Planet.Infected);
             _uiByName["Deaths"].SetValue((int) Planet.Deaths);
+        }
+    }
+
+    private void QuickFix()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Close();
         }
     }
 }
