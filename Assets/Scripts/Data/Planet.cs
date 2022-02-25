@@ -5,7 +5,7 @@ public class Planet
     public PlanetData Data;
 
     public double Infected = 100;
-    public float Deaths = 0;
+    public double Deaths = 0;
 
     private float _deathRate = 0.05f;
     private Population _population;

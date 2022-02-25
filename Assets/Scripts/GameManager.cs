@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
     private void NextGeneration()
     {
         double totalInfected = 0;
-        float totalDeaths = 0;
+        double totalDeaths = 0;
 
         foreach (Planet planet in _planets.Values)
         {

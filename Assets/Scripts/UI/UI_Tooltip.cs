@@ -64,6 +64,13 @@ public class UI_Tooltip : MonoBehaviour
 
     public void SetPosition(Vector2 position)
     {
-        transform.position = new Vector2(position.x + _scaledSize.x / 2, position.y - _scaledSize.y / 2);
+        if (position.x + _scaledSize.x > Screen.width)
+        {
+            transform.position = new Vector2(position.x - _scaledSize.x / 2, position.y - _scaledSize.y / 2);
+        }
+        else
+        {
+            transform.position = new Vector2(position.x + _scaledSize.x / 2, position.y - _scaledSize.y / 2);
+        }
     }
 }

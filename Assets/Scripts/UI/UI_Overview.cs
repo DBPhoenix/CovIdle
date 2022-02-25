@@ -10,7 +10,7 @@ public class UI_Overview : MonoBehaviour
     [SerializeField]
     private UI_Text[] _uiElements;
 
-    private double _mutations = 0;
+    public double Mutations = 0;
     private Dictionary<string, UI_Text> _uiByName = new Dictionary<string, UI_Text>();
 
     private void Awake()
@@ -54,12 +54,12 @@ public class UI_Overview : MonoBehaviour
     {
         _uiByName["Infected"].SetValue(infected.ToString());
         _uiByName["Deaths"].SetValue(deaths);
-        _uiByName["Mutations"].SetValue((int) _mutations);
+        _uiByName["Mutations"].SetValue((int) Mutations);
     }
 
     public void GenerateMutations(double infected)
     {
-        _mutations += Math.Log(infected);
+        Mutations += Math.Log(infected);
     }
 
 /*

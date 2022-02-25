@@ -21,6 +21,11 @@ public class UI_Text : MonoBehaviour
         _text.text = $"{_prefix}{value}";
     }
 
+    public void SetValue(double value)
+    {
+        _text.text = $"{_prefix}{((int) value).ToString()}";
+    }
+
     public void SetValue(int value)
     {
         _text.text = $"{_prefix}{value.ToString()}";

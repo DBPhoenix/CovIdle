@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public abstract class UI_Perk : Button, IPointerEnterHandler, IPointerExitHandler
+public abstract class UI_Perk : Button, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public PerkStatus Status
     {
@@ -14,6 +14,8 @@ public abstract class UI_Perk : Button, IPointerEnterHandler, IPointerExitHandle
     public Sprite Icon;
 
     public string Description;
+    public double Cost;
+    public UI_Perk[] LeadsTo;
 
     private PerkStatus _status;
 
@@ -23,9 +25,9 @@ public abstract class UI_Perk : Button, IPointerEnterHandler, IPointerExitHandle
     private GameObject _enabled;
     private GameObject _purchased;
 
-    private new void Start()
+    private new void Awake()
     {
-        base.Start();
+        base.Awake();
 
         _disabled = transform.Find("Disabled").gameObject;
         _enabled = transform.Find("Enabled").gameObject;
@@ -44,12 +46,31 @@ public abstract class UI_Perk : Button, IPointerEnterHandler, IPointerExitHandle
         }
     }
 
+    public new void OnPointerClick(PointerEventData eventData)
+    {
+        base.OnPointerClick(eventData);
+
+        if (Status == PerkStatus.Enabled && UI_Overview.Instance.Mutations > Cost)
+        {
+            UI_Overview.Instance.Mutations -= Cost;
+
+            Purchase();
+
+            foreach (UI_Perk perk in LeadsTo)
+            {
+                perk.Status = PerkStatus.Enabled;
+            }
+
+            Status = PerkStatus.Purchased;
+        }
+    }
+
     public new void OnPointerEnter(PointerEventData eventData)
     {
         base.OnPointerEnter(eventData);
 
         UI_Tooltip.Instance.SetHeader(gameObject.name);
-        UI_Tooltip.Instance.SetDescription(Description);
+        UI_Tooltip.Instance.SetDescription(Description + $"\nRequires: {Cost} M");
         UI_Tooltip.Instance.Display();
 
         _isPointerOver = true;
