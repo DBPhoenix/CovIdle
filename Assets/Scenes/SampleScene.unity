@@ -180,7 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3030213464750847518, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 120
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3030213464750847518, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -730,7 +730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3030213464750847518, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 120
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3030213464750847518, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1968,6 +1968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefix: 'Mutations: '
+  _suffix: 
 --- !u!114 &316947546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3070,6 +3071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefix: 'Deaths: '
+  _suffix: 
 --- !u!114 &528786539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3260,6 +3262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefix: 'Infected: '
+  _suffix: 
 --- !u!114 &551245564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3408,6 +3411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefix: 'Mutations: '
+  _suffix: 
 --- !u!114 &564078488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3711,7 +3715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3030213464750847518, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 120
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3030213464750847518, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4388,7 +4392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3030213464750847518, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 120
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3030213464750847518, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6373,6 +6377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefix: 'Infected: '
+  _suffix: 
 --- !u!114 &1011134639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6689,6 +6694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefix: 'Deaths: '
+  _suffix: 
 --- !u!114 &1071002441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8440,6 +8446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefix: 
+  _suffix: 
 --- !u!1 &1477381200
 GameObject:
   m_ObjectHideFlags: 0
@@ -9923,6 +9930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefix: 'Deaths: '
+  _suffix: 
 --- !u!114 &1745554160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10222,6 +10230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefix: 'Infected: '
+  _suffix: 
 --- !u!114 &1786224866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10680,6 +10689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefix: 
+  _suffix: 
 --- !u!1 &1916965128
 GameObject:
   m_ObjectHideFlags: 0
@@ -10852,6 +10862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefix: 'Mutations: '
+  _suffix: 
 --- !u!114 &1917297079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12769,7 +12780,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3030213464750847518, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 120
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3030213464750847518, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
       propertyPath: m_LocalPosition.x
