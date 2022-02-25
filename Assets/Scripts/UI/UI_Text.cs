@@ -8,6 +8,8 @@ public class UI_Text : MonoBehaviour
 {
     [SerializeField]
     private string _prefix;
+    [SerializeField]
+    private string _suffix;
 
     private TextMeshProUGUI _text;
 
@@ -18,16 +20,16 @@ public class UI_Text : MonoBehaviour
 
     public void SetValue(string value)
     {
-        _text.text = $"{_prefix}{value}";
+        _text.text = $"{_prefix}{value}{_suffix}";
     }
 
     public void SetValue(double value)
     {
-        _text.text = $"{_prefix}{((int) value).ToString()}";
+        _text.text = $"{_prefix}{((int) value).ToString()}{_suffix}";
     }
 
     public void SetValue(int value)
     {
-        _text.text = $"{_prefix}{value.ToString()}";
+        _text.text = $"{_prefix}{value.ToString()}{_suffix}";
     }
 }

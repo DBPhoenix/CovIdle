@@ -3,17 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public sealed class Virus : UI_Perk
+public sealed class WhiteAir : UI_Perk
 {
-    private new void Start()
-    {
-        base.Start();
-
-        Status = PerkStatus.Enabled;
-    }
-
     private protected override void Purchase()
     {
-        return;
+        // Decrease Natural Resistance
+        Perks.InfectionRate += 0.025f;
     }
 }

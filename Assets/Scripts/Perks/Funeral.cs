@@ -3,17 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public sealed class Virus : UI_Perk
+public sealed class Funeral : UI_Perk
 {
-    private new void Start()
-    {
-        base.Start();
-
-        Status = PerkStatus.Enabled;
-    }
-
     private protected override void Purchase()
     {
-        return;
+        Perks.MeetingsPerInfected += 1;
+        Perks.DeathRate += 0.01f;
     }
 }

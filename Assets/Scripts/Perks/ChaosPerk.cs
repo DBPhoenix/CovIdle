@@ -3,17 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public sealed class Virus : UI_Perk
+public sealed class ChaosPerk : UI_Perk
 {
-    private new void Start()
-    {
-        base.Start();
-
-        Status = PerkStatus.Enabled;
-    }
-
     private protected override void Purchase()
     {
-        return;
+        GameObject.Find("Chaos").GetComponent<UI_Building>().Status = BuildingStatus.Enabled;
     }
 }

@@ -3,17 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public sealed class Virus : UI_Perk
+public sealed class GlobalWarmingIceAge : UI_Perk
 {
-    private new void Start()
-    {
-        base.Start();
-
-        Status = PerkStatus.Enabled;
-    }
-
     private protected override void Purchase()
     {
-        return;
+        GameObject.Find("Temperature").GetComponent<UI_Building>().Status = BuildingStatus.Enabled;
     }
 }

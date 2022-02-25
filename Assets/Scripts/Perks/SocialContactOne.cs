@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public sealed class Smitte : UI_Perk
+public sealed class SocialContactOne : UI_Perk
 {
     private protected override void Purchase()
     {
-        // TEST
+        Perks.MeetingsPerInfected += 0.2f;
     }
 }

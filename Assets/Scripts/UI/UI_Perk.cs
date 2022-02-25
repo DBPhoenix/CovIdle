@@ -70,7 +70,7 @@ public abstract class UI_Perk : Button, IPointerClickHandler, IPointerEnterHandl
         base.OnPointerEnter(eventData);
 
         UI_Tooltip.Instance.SetHeader(gameObject.name);
-        UI_Tooltip.Instance.SetDescription(Description + $"\nRequires: {Cost} M");
+        UI_Tooltip.Instance.SetDescription(Description + $"\nRequires: {Cost} Mutations");
         UI_Tooltip.Instance.Display();
 
         _isPointerOver = true;
