@@ -7,6 +7,6 @@ public sealed class LazyCells : UI_Perk
 {
     private protected override void Purchase()
     {
-        // KEKW?
+        Perks.InfectedCarryOverRate += 0.05f;
     }
 }

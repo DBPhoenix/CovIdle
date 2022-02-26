@@ -7,6 +7,6 @@ public sealed class GlobalWarmingIceAge : UI_Perk
 {
     private protected override void Purchase()
     {
-        GameObject.Find("Temperature").GetComponent<UI_Building>().Status = BuildingStatus.Enabled;
+        Resources.FindObjectsOfTypeAll<Temperature>()[0].Status = BuildingStatus.Enabled;
     }
 }

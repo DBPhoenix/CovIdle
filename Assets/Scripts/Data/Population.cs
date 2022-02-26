@@ -32,7 +32,7 @@ public class Population
         double newInfections = 0;
         float infectionModifier = InfectionMultiplier();
 
-        float[] distribution = UninfectedResistanceDistribution();
+        double[] distribution = UninfectedResistanceDistribution();
 
         Debug.Log($"Infection Modifier: {infectionModifier}");
 
@@ -42,12 +42,12 @@ public class Population
             PopulationSegment infected = _infected[i];
 
             newInfections += infected.Size * infectionModifier;
-            int deaths = (int) (infected.Size * Perks.DeathRate);
+            double deaths = infected.Size * Perks.DeathRate;
 
             _planet.Deaths += deaths;
 
             _uninfected[i + 1].Size += infected.Size - deaths;
-            infected.Size = 0;
+            infected.Size = infected.Size * Perks.InfectedCarryOverRate;
         }
 
         // Infect New Uninfected Segments based on Distribution
@@ -58,29 +58,29 @@ public class Population
             double infected = Math.Floor(newInfections * distribution[i]);
 
             uninfected.Size -= infected;
-            _infected[i].Size = infected;
+            _infected[i].Size += infected;
         }
 
         _planet.Infected = Math.Floor(newInfections);
     }
 
-    private float[] UninfectedResistanceDistribution()
+    private double[] UninfectedResistanceDistribution()
     {
-        float totalPopulation = 0;
+        double totalPopulation = 0;
 
         foreach (PopulationSegment uninfected in _uninfected)
         {
-            totalPopulation += (int) (uninfected.Size * (1 - uninfected.NaturalResistance));
+            totalPopulation += uninfected.Size * (1 - uninfected.NaturalResistance);
         }
 
-        float[] distribution = new float[11];
+        double[] distribution = new double[11];
 
         for (int i = 0; i < 11; i++)
         {
             PopulationSegment uninfected = _uninfected[i];
-            distribution[i] = (float) ((uninfected.Size * (1 - uninfected.NaturalResistance)) / totalPopulation);
+            distribution[i] = (uninfected.Size * (1 - uninfected.NaturalResistance)) / totalPopulation;
         }
-        
+
         return distribution;
     }
 

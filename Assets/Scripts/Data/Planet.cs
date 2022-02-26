@@ -7,7 +7,6 @@ public class Planet
     public double Infected = 100;
     public double Deaths = 0;
 
-    private float _deathRate = 0.05f;
     private Population _population;
 
     [HideInInspector]

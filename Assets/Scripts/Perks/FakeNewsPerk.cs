@@ -7,6 +7,6 @@ public sealed class FakeNewsPerk : UI_Perk
 {
     private protected override void Purchase()
     {
-        GameObject.Find("Fake News").GetComponent<UI_Building>().Status = BuildingStatus.Enabled;
+        Resources.FindObjectsOfTypeAll<Disbelievers>()[0].Status = BuildingStatus.Enabled;
     }
 }

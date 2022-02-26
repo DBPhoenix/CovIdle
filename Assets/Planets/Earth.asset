@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Earth
   PopulationSize: 2147483647
-  Map: {fileID: 21300000, guid: d946d5172dadc4fa79b92342e0aba1d9, type: 3}
+  Map: {fileID: 21300000, guid: 00015971600d34c6ba0b57efd006ce2d, type: 3}
   Temperature: 20
   MeetingsPerInfected: 4
   ResistanceDistribution:

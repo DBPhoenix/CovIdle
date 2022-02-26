@@ -7,6 +7,6 @@ public sealed class ChaosPerk : UI_Perk
 {
     private protected override void Purchase()
     {
-        GameObject.Find("Chaos").GetComponent<UI_Building>().Status = BuildingStatus.Enabled;
+        Resources.FindObjectsOfTypeAll<Chaos>()[0].Status = BuildingStatus.Enabled;
     }
 }

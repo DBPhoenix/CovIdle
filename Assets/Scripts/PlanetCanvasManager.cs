@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlanetCanvasManager : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class PlanetCanvasManager : MonoBehaviour
     [SerializeField]
     private UI_Text[] _uiElements;
 
+    private Image _map;
     private Dictionary<string, UI_Text> _uiByName = new Dictionary<string, UI_Text>();
 
     private void Awake()
@@ -30,6 +32,8 @@ public class PlanetCanvasManager : MonoBehaviour
             _uiByName.Add(ui.gameObject.name, ui);
         }
 
+        _map = transform.Find("Body").Find("Terrain").GetComponent<Image>();
+
         gameObject.SetActive(false);
     }
 
@@ -46,6 +50,8 @@ public class PlanetCanvasManager : MonoBehaviour
 
         _uiByName["Name"].SetValue(Planet.Data.Name);
 
+        _map.sprite = planet.Data.Map;
+
         UpdateStats();
     }
 
@@ -58,8 +64,9 @@ public class PlanetCanvasManager : MonoBehaviour
     {
         if (gameObject.activeSelf)
         {
-            _uiByName["Infected"].SetValue((int) Planet.Infected);
-            _uiByName["Deaths"].SetValue((int) Planet.Deaths);
+            _uiByName["Infected"].SetValue(Planet.Infected);
+            _uiByName["Deaths"].SetValue(Planet.Deaths);
+            _uiByName["Mutations"].SetValue(UI_Overview.Instance.Mutations);
         }
     }
 

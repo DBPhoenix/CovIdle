@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public abstract class UI_Building : Button, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
+public abstract class UI_Building : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public BuildingStatus Status
     {
@@ -17,21 +17,25 @@ public abstract class UI_Building : Button, IPointerClickHandler, IPointerEnterH
 
     public string Description;
 
-    private BuildingStatus _status = BuildingStatus.Enabled;
+    public double Multiplier;
+
+    private BuildingStatus _status;
 
     private bool _isPointerOver = false;
+    private int _purchaseCount = 0;
 
+    private UI_Text _name;
     private UI_Text _price;
 
-    private new void Start()
+    private void Awake()
     {
-        base.Start();
-
+        _name = transform.Find("Name").GetComponent<UI_Text>();
         _price = transform.Find("Price").GetComponent<UI_Text>();
+    }
 
+    private void Start()
+    {
         _price.SetValue(Cost);
-
-        onClick.AddListener(Purchase);
     }
 
     public void Update()
@@ -42,10 +46,8 @@ public abstract class UI_Building : Button, IPointerClickHandler, IPointerEnterH
         }
     }
 
-    public new void OnPointerClick(PointerEventData eventData)
+    public void OnPointerClick(PointerEventData eventData)
     {
-        base.OnPointerClick(eventData);
-
         if (PlanetCanvasManager.Instance.Planet.Deaths > Cost)
         {
             PlanetCanvasManager.Instance.Planet.Deaths -= Cost;
@@ -54,16 +56,15 @@ public abstract class UI_Building : Button, IPointerClickHandler, IPointerEnterH
 
             IncreaseCost();
 
+            _name.SetValue($"{++_purchaseCount}x {transform.name}");
             _price.SetValue(Cost);
 
             PlanetCanvasManager.Instance.UpdateStats();
         }
     }
 
-    public new void OnPointerEnter(PointerEventData eventData)
+    public void OnPointerEnter(PointerEventData eventData)
     {
-        base.OnPointerEnter(eventData);
-
         UI_Tooltip.Instance.SetHeader(gameObject.name);
         UI_Tooltip.Instance.SetDescription(Description);
         UI_Tooltip.Instance.Display();
@@ -71,10 +72,8 @@ public abstract class UI_Building : Button, IPointerClickHandler, IPointerEnterH
         _isPointerOver = true;
     }
 
-    public new void OnPointerExit(PointerEventData eventData)
+    public void OnPointerExit(PointerEventData eventData)
     {
-        base.OnPointerExit(eventData);
-
         UI_Tooltip.Instance.Hide();
 
         _isPointerOver = false;

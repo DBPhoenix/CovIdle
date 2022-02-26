@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public GameObject Line;
 
     [SerializeField]
     private int _generationRepeatRate;
@@ -17,7 +18,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private float _optimalTemperature;
 
-    private Dictionary<string, Planet> _planets = new Dictionary<string, Planet>();
+    public Dictionary<string, Planet> Planets = new Dictionary<string, Planet>();
 
     private void Awake()
     {
@@ -51,7 +52,7 @@ public class GameManager : MonoBehaviour
 
             PlanetData data = planet.PlanetData;
 
-            _planets[data.Name] = new Planet(data);
+            Planets[data.Name] = new Planet(data);
         }
 
         InvokeRepeating("NextGeneration", 0, _generationRepeatRate);
@@ -67,7 +68,7 @@ public class GameManager : MonoBehaviour
 
     public void OpenPlanet(PlanetData data)
     {
-        PlanetCanvasManager.Instance.Open(_planets[data.Name]);
+        PlanetCanvasManager.Instance.Open(Planets[data.Name]);
     }
 
     private void NextGeneration()
@@ -75,7 +76,7 @@ public class GameManager : MonoBehaviour
         double totalInfected = 0;
         double totalDeaths = 0;
 
-        foreach (Planet planet in _planets.Values)
+        foreach (Planet planet in Planets.Values)
         {
             planet.NextGeneration();
 
@@ -86,6 +87,6 @@ public class GameManager : MonoBehaviour
         UI_Overview.Instance.GenerateMutations(totalInfected);
 
         PlanetCanvasManager.Instance.UpdateStats();
-        UI_Overview.Instance.UpdateStats(totalInfected, (int) totalDeaths);
+        UI_Overview.Instance.UpdateStats(totalInfected, totalDeaths);
     }
 }

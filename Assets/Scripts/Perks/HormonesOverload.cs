@@ -7,6 +7,6 @@ public sealed class HormonesOverload : UI_Perk
 {
     private protected override void Purchase()
     {
-        // KEKW
+        // Implement Actions, KEKW
     }
 }

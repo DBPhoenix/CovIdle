@@ -7,6 +7,6 @@ public sealed class AntiVaxxersPerk : UI_Perk
 {
     private protected override void Purchase()
     {
-        GameObject.Find("Anti Vaxxers").GetComponent<UI_Building>().Status = BuildingStatus.Enabled;
+        Resources.FindObjectsOfTypeAll<AntiVaxxers>()[0].Status = BuildingStatus.Enabled;
     }
 }

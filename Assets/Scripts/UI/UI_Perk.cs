@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public abstract class UI_Perk : Button, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
+public abstract class UI_Perk : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public PerkStatus Status
     {
@@ -25,17 +26,22 @@ public abstract class UI_Perk : Button, IPointerClickHandler, IPointerEnterHandl
     private GameObject _enabled;
     private GameObject _purchased;
 
-    private new void Awake()
+    private void Awake()
     {
-        base.Awake();
-
         _disabled = transform.Find("Disabled").gameObject;
         _enabled = transform.Find("Enabled").gameObject;
         _purchased = transform.Find("Purchased").gameObject;
 
-        transform.Find("Icon").GetComponent<Image>().sprite = Icon;
+        Debug.Log($"Disabled: {_disabled.name}");
+        Debug.Log($"Enabled: {_enabled.name}");
+        Debug.Log($"Purchased: {_purchased.name}");
 
-        onClick.AddListener(Purchase);
+        transform.Find("Icon").GetComponent<Image>().sprite = Icon;
+    }
+
+    private protected void Start()
+    {
+        ConnectPerks();
     }
 
     public void Update()
@@ -46,10 +52,8 @@ public abstract class UI_Perk : Button, IPointerClickHandler, IPointerEnterHandl
         }
     }
 
-    public new void OnPointerClick(PointerEventData eventData)
+    public void OnPointerClick(PointerEventData eventData)
     {
-        base.OnPointerClick(eventData);
-
         if (Status == PerkStatus.Enabled && UI_Overview.Instance.Mutations > Cost)
         {
             UI_Overview.Instance.Mutations -= Cost;
@@ -65,10 +69,8 @@ public abstract class UI_Perk : Button, IPointerClickHandler, IPointerEnterHandl
         }
     }
 
-    public new void OnPointerEnter(PointerEventData eventData)
+    public void OnPointerEnter(PointerEventData eventData)
     {
-        base.OnPointerEnter(eventData);
-
         UI_Tooltip.Instance.SetHeader(gameObject.name);
         UI_Tooltip.Instance.SetDescription(Description + $"\nRequires: {Cost} Mutations");
         UI_Tooltip.Instance.Display();
@@ -76,13 +78,32 @@ public abstract class UI_Perk : Button, IPointerClickHandler, IPointerEnterHandl
         _isPointerOver = true;
     }
 
-    public new void OnPointerExit(PointerEventData eventData)
+    public void OnPointerExit(PointerEventData eventData)
     {
-        base.OnPointerExit(eventData);
-
         UI_Tooltip.Instance.Hide();
 
         _isPointerOver = false;
+    }
+
+    private void ConnectPerks()
+    {
+        foreach (UI_Perk perk in LeadsTo)
+        {
+            Transform parent = transform.parent;
+            while (!parent.name.StartsWith("Tier"))
+            {
+                parent = parent.parent;
+            }
+
+            RectTransform line = GameObject.Instantiate(GameManager.Instance.Line, parent).GetComponent<RectTransform>();
+            line.transform.SetAsFirstSibling();
+
+            Vector3 vector = perk.transform.position - transform.position;
+
+            line.sizeDelta = new Vector2(vector.magnitude, 5);
+            line.position = transform.position + vector / 2;
+            line.right = vector;
+        }
     }
 
     private void SetStatus(PerkStatus value)

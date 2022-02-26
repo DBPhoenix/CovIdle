@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
+[ExecuteInEditMode]
 [RequireComponent(typeof(TextMeshProUGUI))]
 public class UI_Text : MonoBehaviour
 {
@@ -18,11 +20,6 @@ public class UI_Text : MonoBehaviour
         _text = GetComponent<TextMeshProUGUI>();
     }
 
-    private void OnReset()
-    {
-        _text = GetComponent<TextMeshProUGUI>();
-    }
-
     public void SetValue(string value)
     {
         _text.text = $"{_prefix}{value}{_suffix}";
@@ -30,7 +27,7 @@ public class UI_Text : MonoBehaviour
 
     public void SetValue(double value)
     {
-        _text.text = $"{_prefix}{((int) value).ToString()}{_suffix}";
+        _text.text = $"{_prefix}{Math.Floor(value).ToString()}{_suffix}";
     }
 
     public void SetValue(int value)

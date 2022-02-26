@@ -50,16 +50,16 @@ public class UI_Overview : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void UpdateStats(double infected, int deaths)
+    public void UpdateStats(double infected, double deaths)
     {
-        _uiByName["Infected"].SetValue(infected.ToString());
+        _uiByName["Infected"].SetValue(infected);
         _uiByName["Deaths"].SetValue(deaths);
-        _uiByName["Mutations"].SetValue((int) Mutations);
+        _uiByName["Mutations"].SetValue(Mutations);
     }
 
     public void GenerateMutations(double infected)
     {
-        Mutations += Math.Log(infected);
+        Mutations += Math.Log(infected, 10 - Perks.MutationModifier);
     }
 
 /*
