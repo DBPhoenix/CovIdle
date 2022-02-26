@@ -55,6 +55,8 @@ public abstract class UI_Building : Button, IPointerClickHandler, IPointerEnterH
             IncreaseCost();
 
             _price.SetValue(Cost);
+
+            PlanetCanvasManager.Instance.UpdateStats();
         }
     }
 

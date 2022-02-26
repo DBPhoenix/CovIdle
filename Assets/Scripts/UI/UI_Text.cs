@@ -18,6 +18,11 @@ public class UI_Text : MonoBehaviour
         _text = GetComponent<TextMeshProUGUI>();
     }
 
+    private void OnReset()
+    {
+        _text = GetComponent<TextMeshProUGUI>();
+    }
+
     public void SetValue(string value)
     {
         _text.text = $"{_prefix}{value}{_suffix}";

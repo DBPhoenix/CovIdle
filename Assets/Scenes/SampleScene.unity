@@ -180,7 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3030213464750847518, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 3030213464750847518, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -627,7 +627,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: Decrease people's naturel immunity and increase infection rate.
   Cost: 100
   LeadsTo: []
 --- !u!1 &75994395
@@ -730,7 +730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3030213464750847518, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 3030213464750847518, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1018,8 +1018,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 21300000, guid: 3e33113b05ed33d84831348112ef0a66, type: 3}
-  Description: 
-  Cost: 0
+  Description: Increase virus resistance.
+  Cost: 50
   LeadsTo:
   - {fileID: 2046835809}
   - {fileID: 2063777486}
@@ -1184,7 +1184,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: Increase the effectiveness of Fake News and Anti Vaxxers.
   Cost: 300
   LeadsTo: []
 --- !u!1001 &171742099
@@ -1347,7 +1347,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 21300000, guid: a1d30ed2a097c0218a24ef9bcee9fe49, type: 3}
-  Description: 
+  Description: Generates deaths.
   Cost: 50
   LeadsTo:
   - {fileID: 2086497539}
@@ -1914,7 +1914,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: Increase / decrease the temperature.
   Cost: 500
   LeadsTo: []
 --- !u!1 &316947543
@@ -1989,7 +1989,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Placeholder: XXX'
+  m_text: More Info Coming Soon...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
   m_sharedMaterial: {fileID: 4038646327203791832, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
@@ -2474,7 +2474,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: Decrease people's naturel immunity.
   Cost: 200
   LeadsTo: []
 --- !u!1 &427839151
@@ -2555,7 +2555,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 427839154}
   m_OnClick:
     m_PersistentCalls:
@@ -2892,7 +2892,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: Increase the effectiveness of Fake News and Chaos.
   Cost: 300
   LeadsTo: []
 --- !u!1 &516092433
@@ -3283,7 +3283,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Infected: XXX'
+  m_text: More Info Coming Soon...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
   m_sharedMaterial: {fileID: 4038646327203791832, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
@@ -3432,7 +3432,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Placeholder: XXX'
+  m_text: Coming Soon...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
   m_sharedMaterial: {fileID: 4038646327203791832, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
@@ -3715,7 +3715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3030213464750847518, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 3030213464750847518, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4003,7 +4003,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 21300000, guid: 6454f100eee41a21bab5bb2cca90eb0d, type: 3}
-  Description: 
+  Description: 'Unlocks building: Fake News.'
   Cost: 0
   LeadsTo:
   - {fileID: 484825565}
@@ -4169,7 +4169,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: Give a chance for people to kill immune.
   Cost: 300
   LeadsTo: []
 --- !u!1001 &758481605
@@ -4332,7 +4332,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: Decrease cost multiplier of Fake News.
   Cost: 0
   LeadsTo: []
 --- !u!1001 &762072464
@@ -4392,7 +4392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3030213464750847518, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 3030213464750847518, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4651,7 +4651,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Graph, maybe?
+  m_text: What do you want here?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
   m_sharedMaterial: {fileID: 4038646327203791832, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
@@ -5133,7 +5133,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: 'Unlocks Action: Double the chance to kill immune for a while.'
   Cost: 300
   LeadsTo: []
 --- !u!1001 &895983776
@@ -5296,7 +5296,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: Increase the chance to infect people and death rate.
   Cost: 300
   LeadsTo: []
 --- !u!1001 &912331456
@@ -5459,7 +5459,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 21300000, guid: 6896bc8bcb39e79c9b36ed280759e2a6, type: 3}
-  Description: 
+  Description: Increase the death rate.
   Cost: 50
   LeadsTo:
   - {fileID: 1570117863}
@@ -5484,7 +5484,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &922591715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5739,7 +5739,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: Lazy Cells My Ass!
+  Description: Increase the time people are infected for.
   Cost: 300
   LeadsTo: []
 --- !u!1 &956832080
@@ -5859,9 +5859,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _uiElements:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1011134638}
+  - {fileID: 1071002440}
+  - {fileID: 1917297078}
   Mutations: 0
 --- !u!1 &989401493
 GameObject:
@@ -7041,7 +7041,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: Raise the number of mutations points you get from infected.
   Cost: 100
   LeadsTo:
   - {fileID: 1274725426}
@@ -7207,7 +7207,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 21300000, guid: d6bb95aae3fe9d56fbe63d17555ba49d, type: 3}
-  Description: 
+  Description: Raise the number of people, people meet.
   Cost: 100
   LeadsTo:
   - {fileID: 2066914361}
@@ -7578,7 +7578,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: Increase the chance to infect people and death rate.
   Cost: 100
   LeadsTo:
   - {fileID: 895983779}
@@ -7743,7 +7743,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: Increase the time people are infected and death rate.
   Cost: 300
   LeadsTo: []
 --- !u!1 &1273793667 stripped
@@ -7973,7 +7973,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: Raise the number of people, people meet and increase the chance to
+    infect people.
   Cost: 200
   LeadsTo: []
 --- !u!1001 &1285285498
@@ -8136,7 +8137,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: Increase / decrease the perfect temperature of the planet.
   Cost: 100
   LeadsTo:
   - {fileID: 941793295}
@@ -8567,7 +8568,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1493342072}
   m_OnClick:
     m_PersistentCalls:
@@ -8816,7 +8817,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: Increase date rate.
   Cost: 100
   LeadsTo:
   - {fileID: 749826030}
@@ -9115,7 +9116,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: Get a chance to gain a mutation point on infection.
   Cost: 200
   LeadsTo: []
 --- !u!1 &1639433497
@@ -9424,7 +9425,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 21300000, guid: 883517a261ebfb239abd7ca24b4441a0, type: 3}
-  Description: What does this do, you say? Well, I don't know.
+  Description: Increase the chance to infect people.
   Cost: 100
   LeadsTo:
   - {fileID: 2070804132}
@@ -9589,7 +9590,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 21300000, guid: ae64a498c07c494bc8db225cdc539bbd, type: 3}
-  Description: 
+  Description: Increase the death rate.
   Cost: 100
   LeadsTo:
   - {fileID: 827173874}
@@ -9755,7 +9756,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: Massively increase the mutation points production.
   Cost: 200
   LeadsTo: []
 --- !u!1 &1726283339
@@ -9836,7 +9837,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1726283342}
   m_OnClick:
     m_PersistentCalls:
@@ -9951,7 +9952,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Deaths: XXX'
+  m_text: More Info Coming Soon...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
   m_sharedMaterial: {fileID: 4038646327203791832, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
@@ -10601,8 +10602,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 125820582 M
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
+  m_sharedMaterial: {fileID: 4038646327203791832, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10768,7 +10769,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1916965131}
   m_OnClick:
     m_PersistentCalls:
@@ -10824,7 +10825,7 @@ GameObject:
   - component: {fileID: 1917297079}
   - component: {fileID: 1917297078}
   m_Layer: 5
-  m_Name: Placeholder
+  m_Name: Mutations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10883,7 +10884,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Placeholder: XXX'
+  m_text: 'Mutations: XXX'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
   m_sharedMaterial: {fileID: 4038646327203791832, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
@@ -11120,7 +11121,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: 'Unlocks building: Anti Vaxxers.'
   Cost: 100
   LeadsTo:
   - {fileID: 168664169}
@@ -11385,7 +11386,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 21300000, guid: 883517a261ebfb239abd7ca24b4441a0, type: 3}
-  Description: 
+  Description: Helps your virus spreading.
   Cost: 50
   LeadsTo:
   - {fileID: 1082855936}
@@ -11434,7 +11435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c6ac82f512403b0c8c8986091d00eec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _generationRepeatRate: 20
+  _generationRepeatRate: 2
   _meetingsPerInfected: 80
   _infectionRate: 0.2
   _optimalTemperature: 20
@@ -11673,7 +11674,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 21300000, guid: d63af79fe3262cc23887d904c8790892, type: 3}
-  Description: 
+  Description: Increase the chance to infect people.
   Cost: 100
   LeadsTo:
   - {fileID: 2063777486}
@@ -11958,7 +11959,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 21300000, guid: d37541c51b3c6cf4eb42b1f4a8a8b2e2, type: 3}
-  Description: 
+  Description: Decrease people's naturel immunity.
   Cost: 100
   LeadsTo:
   - {fileID: 49344200}
@@ -12124,7 +12125,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: Increase social meetings and deathrate.
   Cost: 300
   LeadsTo: []
 --- !u!1001 &2070804129
@@ -12287,7 +12288,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: Massively increase the chance to infect people.
   Cost: 500
   LeadsTo: []
 --- !u!1 &2085014316
@@ -12584,7 +12585,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Icon: {fileID: 0}
-  Description: 
+  Description: 'Unlocks building: Chaos.'
   Cost: 100
   LeadsTo:
   - {fileID: 258158212}
@@ -12780,7 +12781,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3030213464750847518, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 3030213464750847518, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
       propertyPath: m_LocalPosition.x

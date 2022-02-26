@@ -44,6 +44,8 @@ public class Population
             newInfections += infected.Size * infectionModifier;
             int deaths = (int) (infected.Size * Perks.DeathRate);
 
+            _planet.Deaths += deaths;
+
             _uninfected[i + 1].Size += infected.Size - deaths;
             infected.Size = 0;
         }
