@@ -17,6 +17,7 @@ public abstract class UI_Perk : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public string Description;
     public double Cost;
     public UI_Perk[] LeadsTo;
+    public int RequiredCount;
 
     private PerkStatus _status;
 
@@ -31,10 +32,6 @@ public abstract class UI_Perk : MonoBehaviour, IPointerClickHandler, IPointerEnt
         _disabled = transform.Find("Disabled").gameObject;
         _enabled = transform.Find("Enabled").gameObject;
         _purchased = transform.Find("Purchased").gameObject;
-
-        Debug.Log($"Disabled: {_disabled.name}");
-        Debug.Log($"Enabled: {_enabled.name}");
-        Debug.Log($"Purchased: {_purchased.name}");
 
         transform.Find("Icon").GetComponent<Image>().sprite = Icon;
     }
@@ -62,7 +59,12 @@ public abstract class UI_Perk : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
             foreach (UI_Perk perk in LeadsTo)
             {
-                perk.Status = PerkStatus.Enabled;
+                perk.RequiredCount--;
+
+                if (perk.RequiredCount == 0)
+                {
+                    perk.Status = PerkStatus.Enabled;
+                }
             }
 
             Status = PerkStatus.Purchased;
@@ -103,6 +105,8 @@ public abstract class UI_Perk : MonoBehaviour, IPointerClickHandler, IPointerEnt
             line.sizeDelta = new Vector2(vector.magnitude, 5);
             line.position = transform.position + vector / 2;
             line.right = vector;
+
+            perk.RequiredCount++;
         }
     }
 

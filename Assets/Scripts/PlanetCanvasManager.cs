@@ -67,12 +67,13 @@ public class PlanetCanvasManager : MonoBehaviour
             _uiByName["Infected"].SetValue(Planet.Infected);
             _uiByName["Deaths"].SetValue(Planet.Deaths);
             _uiByName["Mutations"].SetValue(UI_Overview.Instance.Mutations);
+            _uiByName["Temperature"].SetValue(Planet.Temperature.ToString("N1"));
         }
     }
 
     private void QuickFix()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !UI_PerkTree.Instance.gameObject.activeSelf)
         {
             Close();
         }

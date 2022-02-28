@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private float _optimalTemperature;
 
+    private double _totalInfected = 0;
+
     public Dictionary<string, Planet> Planets = new Dictionary<string, Planet>();
 
     private void Awake()
@@ -55,7 +57,7 @@ public class GameManager : MonoBehaviour
             Planets[data.Name] = new Planet(data);
         }
 
-        InvokeRepeating("NextGeneration", 0, _generationRepeatRate);
+        UpdateStats();
     }
 
     private void Update()
@@ -64,6 +66,8 @@ public class GameManager : MonoBehaviour
         {
             UI_Tooltip.Instance.Hide();
         }
+
+        UI_Overview.Instance.GenerateMutations(_totalInfected);
     }
 
     public void OpenPlanet(PlanetData data)
@@ -71,22 +75,18 @@ public class GameManager : MonoBehaviour
         PlanetCanvasManager.Instance.Open(Planets[data.Name]);
     }
 
-    private void NextGeneration()
+    public void UpdateStats()
     {
-        double totalInfected = 0;
+        _totalInfected = 0;
         double totalDeaths = 0;
 
         foreach (Planet planet in Planets.Values)
         {
-            planet.NextGeneration();
-
-            totalInfected += planet.Infected;
+            _totalInfected += planet.Infected;
             totalDeaths += planet.Deaths;
         }
 
-        UI_Overview.Instance.GenerateMutations(totalInfected);
-
         PlanetCanvasManager.Instance.UpdateStats();
-        UI_Overview.Instance.UpdateStats(totalInfected, totalDeaths);
+        UI_Overview.Instance.UpdateStats(_totalInfected, totalDeaths);
     }
 }

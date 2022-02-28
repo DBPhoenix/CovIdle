@@ -45,8 +45,9 @@ public class Population
             double deaths = infected.Size * Perks.DeathRate;
 
             _planet.Deaths += deaths;
+            infected.Size -= deaths;
 
-            _uninfected[i + 1].Size += infected.Size - deaths;
+            _uninfected[i + 1].Size += infected.Size;
             infected.Size = infected.Size * Perks.InfectedCarryOverRate;
         }
 

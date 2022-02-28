@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public abstract class UI_Building : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
+public abstract class UI_ActivePerk : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public BuildingStatus Status
     {
@@ -24,20 +24,6 @@ public abstract class UI_Building : MonoBehaviour, IPointerClickHandler, IPointe
     private bool _isPointerOver = false;
     private int _purchaseCount = 0;
 
-    private UI_Text _name;
-    private UI_Text _price;
-
-    private void Awake()
-    {
-        _name = transform.Find("Name").GetComponent<UI_Text>();
-        _price = transform.Find("Price").GetComponent<UI_Text>();
-    }
-
-    private protected void Start()
-    {
-        _price.SetValue(Cost);
-    }
-
     public void Update()
     {
         if (_isPointerOver)
@@ -48,16 +34,13 @@ public abstract class UI_Building : MonoBehaviour, IPointerClickHandler, IPointe
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (PlanetCanvasManager.Instance.Planet.Deaths > Cost)
+        if (UI_Overview.Instance.Mutations > Cost)
         {
-            PlanetCanvasManager.Instance.Planet.Deaths -= Cost;
+            UI_Overview.Instance.Mutations -= Cost;
 
             Purchase();
 
             IncreaseCost();
-
-            _name.SetValue($"{++_purchaseCount}x {transform.name}");
-            _price.SetValue(Cost);
 
             PlanetCanvasManager.Instance.UpdateStats();
         }
@@ -66,7 +49,7 @@ public abstract class UI_Building : MonoBehaviour, IPointerClickHandler, IPointe
     public void OnPointerEnter(PointerEventData eventData)
     {
         UI_Tooltip.Instance.SetHeader(gameObject.name);
-        UI_Tooltip.Instance.SetDescription(Description);
+        UI_Tooltip.Instance.SetDescription($"{Description}\nCost: {Cost} Mutations");
         UI_Tooltip.Instance.Display();
 
         _isPointerOver = true;
@@ -98,18 +81,7 @@ public abstract class UI_Building : MonoBehaviour, IPointerClickHandler, IPointe
         }
     }
 
-    public void SetName(string name)
-    {
-        _name.SetValue(name);
-    }
-
     private protected abstract void IncreaseCost();
 
     private protected abstract void Purchase();
-}
-
-public enum BuildingStatus
-{
-    Disabled,
-    Enabled
 }

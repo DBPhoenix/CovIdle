@@ -55,11 +55,22 @@ public class UI_Overview : MonoBehaviour
         _uiByName["Infected"].SetValue(infected);
         _uiByName["Deaths"].SetValue(deaths);
         _uiByName["Mutations"].SetValue(Mutations);
+
+        if (Perks.MinOptimalTemperature == Perks.MaxOptimalTemperature)
+        {
+            _uiByName["Ideal Temperature"].SetValue($"{Perks.MinOptimalTemperature}");
+        }
+        else
+        {
+            _uiByName["Ideal Temperature"].SetValue($"{Perks.MinOptimalTemperature} - {Perks.MaxOptimalTemperature}");
+        }
     }
 
     public void GenerateMutations(double infected)
     {
-        Mutations += Math.Log(infected, 10 - Perks.MutationModifier);
+        Mutations += Math.Log(infected, 10 - Perks.MutationModifier) * Time.deltaTime;
+        GameManager.Instance.UpdateStats();
+        PlanetCanvasManager.Instance.UpdateStats();
     }
 
 /*

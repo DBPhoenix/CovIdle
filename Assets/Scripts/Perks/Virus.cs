@@ -14,6 +14,6 @@ public sealed class Virus : UI_Perk
 
     private protected override void Purchase()
     {
-        return;
+        Resources.FindObjectsOfTypeAll<SpreadVirus>()[0].Status = BuildingStatus.Enabled;
     }
 }

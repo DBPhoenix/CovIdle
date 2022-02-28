@@ -11,6 +11,6 @@ public sealed class Jalousi : UI_Building
 
     private protected override void Purchase()
     {
-        // WHAT TO DO exactly?
+        // KEKW
     }
 }

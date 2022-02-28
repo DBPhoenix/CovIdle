@@ -11,6 +11,6 @@ public sealed class AntiVaxxers : UI_Building
 
     private protected override void Purchase()
     {
-        // WHAT TO DO exactly?
+        // KEKW
     }
 }

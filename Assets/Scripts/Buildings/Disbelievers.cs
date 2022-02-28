@@ -11,6 +11,6 @@ public sealed class Disbelievers : UI_Building
 
     private protected override void Purchase()
     {
-        // WHAT TO DO exactly?
+        Perks.MeetingsPerInfected += 0.01f;
     }
 }

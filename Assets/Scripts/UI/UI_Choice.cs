@@ -98,10 +98,12 @@ public class UI_Choice : MonoBehaviour
     public void TriggerChoiceOne()
     {
         Receiver.OnChoiceChosen(false);
+        Hide();
     }
 
     public void TriggerChoiceTwo()
     {
         Receiver.OnChoiceChosen(true);
+        Hide();
     }
 }

@@ -41,6 +41,7 @@ public sealed class ColdHeatOne : UI_Perk, IPointerClickHandler, IChoiceReceiver
 
     private void DisplayChoice()
     {
+        UI_Choice.Instance.SetReceiver(this);
         UI_Choice.Instance.SetHeader(gameObject.name);
         UI_Choice.Instance.SetDescription(ChoiceDescription);
         UI_Choice.Instance.SetChoiceOne("Ice Age");
