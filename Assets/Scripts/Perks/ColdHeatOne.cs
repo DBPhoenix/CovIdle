@@ -20,7 +20,12 @@ public sealed class ColdHeatOne : UI_Perk, IPointerClickHandler, IChoiceReceiver
 
         foreach (UI_Perk perk in LeadsTo)
         {
-            perk.Status = PerkStatus.Enabled;
+            perk.RequiredCount--;
+
+            if (perk.RequiredCount == 0)
+            {
+                perk.Status = PerkStatus.Enabled;
+            }
         }
 
         Status = PerkStatus.Purchased;
@@ -36,6 +41,15 @@ public sealed class ColdHeatOne : UI_Perk, IPointerClickHandler, IChoiceReceiver
 
     private protected override void Purchase()
     {
+        if (_cold)
+        {
+            Perks.MaxOptimalTemperature += 2f;
+        }
+        else
+        {
+            Perks.MinOptimalTemperature -= 2f;
+        }
+
         Resources.FindObjectsOfTypeAll<Temperature>()[0].Cold = _cold;
     }
 

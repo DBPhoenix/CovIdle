@@ -60,14 +60,21 @@ public abstract class UI_Building : MonoBehaviour, IPointerClickHandler, IPointe
             _price.SetValue(Cost);
 
             PlanetCanvasManager.Instance.UpdateStats();
+
+            SetTooltip();
         }
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
+    private void SetTooltip()
     {
         UI_Tooltip.Instance.SetHeader(gameObject.name);
         UI_Tooltip.Instance.SetDescription(Description);
         UI_Tooltip.Instance.Display();
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        SetTooltip();
 
         _isPointerOver = true;
     }

@@ -42,12 +42,12 @@ public class Population
             PopulationSegment infected = _infected[i];
 
             newInfections += infected.Size * infectionModifier;
-            double deaths = infected.Size * Perks.DeathRate;
 
+            double deaths = infected.Size * Perks.DeathRate;
             _planet.Deaths += deaths;
             infected.Size -= deaths;
 
-            _uninfected[i + 1].Size += infected.Size;
+            _uninfected[i + 1].Size += infected.Size * (1 - Perks.InfectedCarryOverRate);
             infected.Size = infected.Size * Perks.InfectedCarryOverRate;
         }
 
@@ -62,7 +62,13 @@ public class Population
             _infected[i].Size += infected;
         }
 
-        _planet.Infected = Math.Floor(newInfections);
+        double totalInfected = 0;
+        foreach (PopulationSegment infected in _infected)
+        {
+            totalInfected += infected.Size;
+        }
+
+        _planet.Infected = Math.Floor(totalInfected);
     }
 
     private double[] UninfectedResistanceDistribution()
@@ -91,8 +97,10 @@ public class Population
         float temperatureModifier = Mathf.Pow(1 - 0.05f, temperatureDiff / 0.25f);
 
         Debug.Log($"Temperature Modifier: {temperatureModifier}");
+        Debug.Log($"Infection Rate: {Perks.InfectionRate}");
+        Debug.Log($"Meetings Per Infected: {(_planet.Data.MeetingsPerInfected + Perks.MeetingsPerInfected)}");
 
-        return temperatureModifier * Perks.InfectionRate * Perks.MeetingsPerInfected * AverageResistance();
+        return temperatureModifier * Perks.InfectionRate * (_planet.Data.MeetingsPerInfected + Perks.MeetingsPerInfected) * (1 - AverageResistance());
     }
 
     private float AverageResistance()

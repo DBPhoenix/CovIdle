@@ -12,8 +12,6 @@ public class GameManager : MonoBehaviour
 
     [Header("Starting Values")]
     [SerializeField]
-    private float _meetingsPerInfected;
-    [SerializeField]
     private float _infectionRate;
     [SerializeField]
     private float _optimalTemperature;
@@ -33,7 +31,6 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        Perks.MeetingsPerInfected = _meetingsPerInfected;
         Perks.InfectionRate = _infectionRate;
         Perks.MinOptimalTemperature = _optimalTemperature;
         Perks.MaxOptimalTemperature = _optimalTemperature;
@@ -75,18 +72,28 @@ public class GameManager : MonoBehaviour
         PlanetCanvasManager.Instance.Open(Planets[data.Name]);
     }
 
-    public void UpdateStats()
+    public double GetTotalInfected()
     {
         _totalInfected = 0;
-        double totalDeaths = 0;
 
         foreach (Planet planet in Planets.Values)
         {
             _totalInfected += planet.Infected;
+        }
+
+        return _totalInfected;
+    }
+
+    public void UpdateStats()
+    {
+        double totalDeaths = 0;
+
+        foreach (Planet planet in Planets.Values)
+        {
             totalDeaths += planet.Deaths;
         }
 
         PlanetCanvasManager.Instance.UpdateStats();
-        UI_Overview.Instance.UpdateStats(_totalInfected, totalDeaths);
+        UI_Overview.Instance.UpdateStats(GetTotalInfected(), totalDeaths);
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -67,6 +68,7 @@ public class PlanetCanvasManager : MonoBehaviour
             _uiByName["Infected"].SetValue(Planet.Infected);
             _uiByName["Deaths"].SetValue(Planet.Deaths);
             _uiByName["Mutations"].SetValue(UI_Overview.Instance.Mutations);
+            _uiByName["MPS"].SetValue(Math.Log(GameManager.Instance.GetTotalInfected(), 10 - Perks.MutationModifier).ToString("N1"));
             _uiByName["Temperature"].SetValue(Planet.Temperature.ToString("N1"));
         }
     }
