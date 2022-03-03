@@ -7,6 +7,6 @@ public sealed class RedBloodCellsOverload : UI_Perk
 {
     private protected override void Purchase()
     {
-        // Decrease Natural Resistance 10%
+        Perks.NaturalResistanceModifier += 0.1f;
     }
 }

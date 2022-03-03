@@ -15,20 +15,19 @@ public abstract class UI_ActivePerk : MonoBehaviour, IPointerClickHandler, IPoin
 
     public double Cost;
 
+    [TextArea]
     public string Description;
-
-    public double Multiplier;
 
     private BuildingStatus _status;
 
-    private bool _isPointerOver = false;
-    private int _purchaseCount = 0;
+    private protected bool _isPointerOver = false;
 
     public void Update()
     {
         if (_isPointerOver)
         {
             UI_Tooltip.Instance.SetPosition(Input.mousePosition);
+            UI_Tooltip.Instance.SetDescription($"{Description}\nCost: {Cost} Mutations");
         }
     }
 

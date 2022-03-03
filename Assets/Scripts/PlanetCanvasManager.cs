@@ -8,6 +8,8 @@ public class PlanetCanvasManager : MonoBehaviour
 {
     public static PlanetCanvasManager Instance;
 
+    public GameObject BackArrow;
+
     [HideInInspector]
     public Planet Planet;
 
@@ -16,6 +18,8 @@ public class PlanetCanvasManager : MonoBehaviour
 
     private Image _map;
     private Dictionary<string, UI_Text> _uiByName = new Dictionary<string, UI_Text>();
+
+    bool _reachedThousandMutation = false;
 
     private void Awake()
     {
@@ -68,16 +72,32 @@ public class PlanetCanvasManager : MonoBehaviour
             _uiByName["Infected"].SetValue(Planet.Infected);
             _uiByName["Deaths"].SetValue(Planet.Deaths);
             _uiByName["Mutations"].SetValue(UI_Overview.Instance.Mutations);
-            _uiByName["MPS"].SetValue(Math.Log(GameManager.Instance.GetTotalInfected(), 10 - Perks.MutationModifier).ToString("N1"));
+            _uiByName["MPS"].SetValue(Math.Log(GameManager.Instance.GetTotalInfected(), 5 - Perks.MutationModifier).ToString("N1"));
             _uiByName["Temperature"].SetValue(Planet.Temperature.ToString("N1"));
+            _uiByName["InfectedMeet"].SetValue((Planet.Data.MeetingsPerInfected + Perks.MeetingsPerInfected).ToString("N1"));
         }
     }
 
     private void QuickFix()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !UI_PerkTree.Instance.gameObject.activeSelf)
+
+        if (!_reachedThousandMutation)
         {
-            Close();
+            if (UI_Overview.Instance.Mutations > 1000)
+            {
+                _reachedThousandMutation = true;
+
+                BackArrow.SetActive(true);
+
+                // SHOW TUTORIAL
+            }
+        }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.Escape) && !UI_PerkTree.Instance.gameObject.activeSelf)
+            {
+                Close();
+            }
         }
     }
 }

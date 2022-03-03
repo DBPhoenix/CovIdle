@@ -8,6 +8,6 @@ public sealed class CoughOne : UI_Perk
     private protected override void Purchase()
     {
         Perks.InfectionRate += 0.075f;
-        Perks.DeathRate += 0.07f;
+        Perks.DeathRate += 0.7f;
     }
 }

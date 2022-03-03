@@ -7,6 +7,7 @@ public sealed class Propaganda : UI_Perk
 {
     private protected override void Purchase()
     {
-        // KEKW
+        Resources.FindObjectsOfTypeAll<Disbelievers>()[0].Multiplier += 0.0025f;
+        Resources.FindObjectsOfTypeAll<AntiVaxxers>()[0].Multiplier += 0.005f;
     }
 }

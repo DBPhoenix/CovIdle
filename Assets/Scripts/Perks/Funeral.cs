@@ -7,7 +7,7 @@ public sealed class Funeral : UI_Perk
 {
     private protected override void Purchase()
     {
-        Perks.MeetingsPerInfected += 1;
-        Perks.DeathRate += 0.01f;
+        Perks.MeetingsPerInfected += 2f;
+        Perks.DeathRate += 0.1f;
     }
 }

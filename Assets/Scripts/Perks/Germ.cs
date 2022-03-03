@@ -7,7 +7,7 @@ public sealed class Germ : UI_Perk
 {
     private protected override void Purchase()
     {
-        Perks.MeetingsPerInfected += 0.01f;
+        Perks.MeetingsPerInfected += 0.5f;
         Perks.InfectionRate += 0.025f;
     }
 }

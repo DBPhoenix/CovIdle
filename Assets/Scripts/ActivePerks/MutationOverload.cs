@@ -3,15 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public sealed class Jalousi : UI_Building
+public sealed class MutationOverload : UI_ActivePerk
 {
     private protected override void IncreaseCost()
     {
-        Cost = Math.Floor(Cost * CostModifier);
+        Cost = Math.Floor(Cost * 2f);
     }
 
     private protected override void Purchase()
     {
-        PlanetCanvasManager.Instance.Planet.Population.Uninfected[10].Size *= 0.95f;
+        UI_Overview.Instance.Mutations *= 2;
+
+        GameManager.Instance.UpdateStats();
     }
 }

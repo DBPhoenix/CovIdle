@@ -8,6 +8,6 @@ public sealed class BloodCough : UI_Perk
     private protected override void Purchase()
     {
         Perks.InfectionRate += 0.15f;
-        Perks.DeathRate += 0.3f;
+        Perks.DeathRate += 3f;
     }
 }

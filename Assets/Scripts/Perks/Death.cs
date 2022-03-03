@@ -7,6 +7,6 @@ public sealed class Death : UI_Perk
 {
     private protected override void Purchase()
     {
-        Perks.DeathRate += 0.05f;
+        Perks.DeathRate += 0.5f;
     }
 }

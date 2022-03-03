@@ -7,6 +7,6 @@ public sealed class SmallTalk : UI_Perk
 {
     private protected override void Purchase()
     {
-        // KEKW
+        Resources.FindObjectsOfTypeAll<Disbelievers>()[0].CostModifier -= 0.02f;
     }
 }

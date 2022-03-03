@@ -24,7 +24,7 @@ public class UI_Tooltip : MonoBehaviour
             Destroy(gameObject);
         }
 
-        Transform container = transform.GetChild(0);
+        Transform container = transform;
 
         _header = container.Find("Header").GetComponent<TextMeshProUGUI>();
         _description = container.Find("Description").GetComponent<TextMeshProUGUI>();
@@ -64,13 +64,27 @@ public class UI_Tooltip : MonoBehaviour
 
     public void SetPosition(Vector2 position)
     {
+        float xPos = 0;
+        float yPos = 0;
+
         if (position.x + _scaledSize.x > Screen.width)
         {
-            transform.position = new Vector2(position.x - _scaledSize.x / 2, position.y - _scaledSize.y / 2);
+            xPos = position.x - _scaledSize.x / 2;
         }
         else
         {
-            transform.position = new Vector2(position.x + _scaledSize.x / 2, position.y - _scaledSize.y / 2);
+            xPos = position.x + _scaledSize.x / 2;
         }
+
+        if (position.y - _scaledSize.y < 0)
+        {
+            yPos = position.y + _scaledSize.y / 2;
+        }
+        else
+        {
+            yPos = position.y - _scaledSize.y / 2;
+        }
+
+        transform.position = new Vector2(xPos, yPos);
     }
 }

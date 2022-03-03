@@ -21,7 +21,7 @@ public class UI_Planet : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
     {
         if (_isPointerOver)
         {
-            UI_Tooltip.Instance.SetDescription($"Infected: {Math.Floor(GameManager.Instance.Planets[PlanetData.name].Infected).ToString()}");
+            UI_Tooltip.Instance.SetDescription($"Infected: {Math.Floor(GameManager.Instance.Planets[PlanetData.name].Infected).ToString()}\nTemperature: {GameManager.Instance.Planets[PlanetData.name].Temperature}");
             UI_Tooltip.Instance.SetPosition(Input.mousePosition);
         }
     }
@@ -34,7 +34,7 @@ public class UI_Planet : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
     public void OnPointerEnter(PointerEventData eventData)
     {
         UI_Tooltip.Instance.SetHeader(PlanetData.name);
-        UI_Tooltip.Instance.SetDescription($"Infected: {Math.Floor(GameManager.Instance.Planets[PlanetData.name].Infected).ToString()}");
+        UI_Tooltip.Instance.SetDescription($"Infected: {Math.Floor(GameManager.Instance.Planets[PlanetData.name].Infected).ToString()}\nTemperature: {GameManager.Instance.Planets[PlanetData.name].Temperature}");
         UI_Tooltip.Instance.Display();
 
         _isPointerOver = true;

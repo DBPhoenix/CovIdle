@@ -30,21 +30,6 @@ public class UI_Overview : MonoBehaviour
         }
     }
 
-/*
-    private void Start()
-    {
-        InvokeRepeating("NextGeneration", 0, _durationBetweenGenerations);
-    }
-
-    private void Update()
-    {
-        IncreaseInfected(_infectedGain * Time.deltaTime);
-        IncreaseDeaths(_deathsGain * Time.deltaTime);
-
-        GenerateMutations();
-    }
-*/
-
     public void Close()
     {
         gameObject.SetActive(false);
@@ -68,31 +53,8 @@ public class UI_Overview : MonoBehaviour
 
     public void GenerateMutations(double infected)
     {
-        Mutations += Math.Log(infected, 10 - Perks.MutationModifier) * Time.deltaTime;
+        Mutations += Math.Log(infected, 5 - Perks.MutationModifier) * Time.deltaTime;
         GameManager.Instance.UpdateStats();
         PlanetCanvasManager.Instance.UpdateStats();
     }
-
-/*
-    private void IncreaseDeaths(float amount)
-    {
-        _infected -= amount;
-        _deaths += amount;
-
-        _uiByName["Deaths"].SetValue((int) _deaths);
-    }
-
-    private void IncreaseInfected(float amount)
-    {
-        _infected += amount;
-
-        _uiByName["Infected"].SetValue((int) _infected);
-    }
-
-    private void NextGeneration()
-    {
-        _deathsGain = (_infected * _deathRate) / _durationBetweenGenerations;
-        _infectedGain = (_infected * _meetingsPerInfected * _infectionRate) / _durationBetweenGenerations;
-    }
-*/
 }

@@ -7,6 +7,6 @@ public sealed class MutationOne : UI_Perk
 {
     private protected override void Purchase()
     {
-        // IMPLEMENT MutationOne
+        Perks.MutationModifier += 1f;
     }
 }

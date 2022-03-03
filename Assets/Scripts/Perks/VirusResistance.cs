@@ -8,6 +8,6 @@ public sealed class VirusResistance : UI_Perk
     private protected override void Purchase()
     {
         Perks.InfectionRate += 0.02f;
-        // IMPLEMENT DECREASE NATURAL RESISTANCE
+        Perks.NaturalResistanceModifier += 0.02f;
     }
 }

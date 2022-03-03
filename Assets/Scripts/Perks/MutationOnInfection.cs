@@ -7,6 +7,6 @@ public sealed class MutationOnInfection : UI_Perk
 {
     private protected override void Purchase()
     {
-        // DO IMPLEMENT THIS TOO KEKW
+        Perks.MutationPointsFromInfected += 0.02f;
     }
 }

@@ -51,24 +51,38 @@ public abstract class UI_Perk : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (Status == PerkStatus.Enabled && UI_Overview.Instance.Mutations > Cost)
+        if (Status == PerkStatus.Enabled)
         {
-            UI_Overview.Instance.Mutations -= Cost;
-
-            Purchase();
-
-            foreach (UI_Perk perk in LeadsTo)
+            if (UI_Overview.Instance.Mutations > Cost)
             {
-                perk.RequiredCount--;
+                UI_Overview.Instance.Mutations -= Cost;
 
-                if (perk.RequiredCount == 0)
+                Purchase();
+
+                foreach (UI_Perk perk in LeadsTo)
                 {
-                    perk.Status = PerkStatus.Enabled;
-                }
-            }
+                    perk.RequiredCount--;
 
-            Status = PerkStatus.Purchased;
+                    if (perk.RequiredCount == 0)
+                    {
+                        perk.Status = PerkStatus.Enabled;
+                    }
+                }
+
+                Status = PerkStatus.Purchased;
+            }
+            else
+            {
+                transform.Find("Icon").GetComponent<Image>().color = new Color(255, 0, 0);
+
+                Invoke("ResetColor", 1);
+            }
         }
+    }
+
+    private void ResetColor()
+    {
+        transform.Find("Icon").GetComponent<Image>().color = new Color(255, 255, 255);
     }
 
     public void OnPointerEnter(PointerEventData eventData)

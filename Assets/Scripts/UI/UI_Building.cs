@@ -14,6 +14,7 @@ public abstract class UI_Building : MonoBehaviour, IPointerClickHandler, IPointe
     }
 
     public double Cost;
+    public double CostModifier = 2;
 
     public string Description;
 

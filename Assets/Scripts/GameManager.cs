@@ -55,6 +55,8 @@ public class GameManager : MonoBehaviour
         }
 
         UpdateStats();
+
+        PlanetCanvasManager.Instance.Open(Planets["Earth"]);
     }
 
     private void Update()

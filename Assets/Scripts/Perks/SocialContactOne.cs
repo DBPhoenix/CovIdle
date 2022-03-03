@@ -7,6 +7,6 @@ public sealed class SocialContactOne : UI_Perk
 {
     private protected override void Purchase()
     {
-        Perks.MeetingsPerInfected += 0.2f;
+        Perks.MeetingsPerInfected += 1f;
     }
 }

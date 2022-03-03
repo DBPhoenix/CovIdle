@@ -4,10 +4,10 @@ public class Planet
 {
     public PlanetData Data;
 
-    public double Infected = 100;
+    public double Infected = 125;
     public double Deaths = 0;
 
-    private Population _population;
+    public Population Population;
 
     [HideInInspector]
     public float Temperature;
@@ -18,11 +18,21 @@ public class Planet
 
         Temperature = data.Temperature;
 
-        _population = new Population(this);
+        Population = new Population(this);
     }
 
     public void NextGeneration()
     {
-        _population.NextVirusSpread();
+        Population.NextVirusSpread();
+    }
+
+    public double EstimateNewDeaths()
+    {
+        return Population.EstimateNewDeaths();
+    }
+
+    public double EstimateNewInfections()
+    {
+        return Population.EstimateNewInfections();
     }
 }

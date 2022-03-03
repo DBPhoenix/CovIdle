@@ -10,6 +10,7 @@ public class TemperatureEditor : Editor
 
         building.Status = (BuildingStatus) EditorGUILayout.EnumPopup("Status", building.Status);
         building.Cost = EditorGUILayout.IntField("Cost", (int) building.Cost);
+        building.CostModifier = EditorGUILayout.DoubleField("Cost Modifier", building.CostModifier);
 
         {
             GUILayout.BeginHorizontal();
