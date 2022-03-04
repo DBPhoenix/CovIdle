@@ -19,6 +19,7 @@ public class PlanetCanvasManager : MonoBehaviour
     private Image _map;
     private Dictionary<string, UI_Text> _uiByName = new Dictionary<string, UI_Text>();
 
+    bool _firstTimeInSpace = false;
     bool _reachedThousandMutation = false;
 
     private void Awake()
@@ -62,6 +63,13 @@ public class PlanetCanvasManager : MonoBehaviour
 
     public void Close()
     {
+        if (!_firstTimeInSpace)
+        {
+            _firstTimeInSpace = true;
+
+            GameManager.Instance.UniverseTutorial();
+        }
+
         gameObject.SetActive(false);
     }
 
@@ -89,7 +97,11 @@ public class PlanetCanvasManager : MonoBehaviour
 
                 BackArrow.SetActive(true);
 
-                // SHOW TUTORIAL
+                UI_Death.Instance.Display(new string[] {
+                    "Hi again, long time no see. You've come far since last time we talked.",
+                    "You are soon ready to become a full-fledged Grim Reaper, but first there's something I must show you.",
+                    "Try clicking on the back arrow in the upper left corner, which just appeared."
+                });
             }
         }
         else

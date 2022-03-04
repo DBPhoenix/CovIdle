@@ -7,6 +7,6 @@ public sealed class InfectionOne : UI_Perk
 {
     private protected override void Purchase()
     {
-        Perks.InfectionRate += 0.05f;
+        Perks.InfectionRate += 0.1f;
     }
 }

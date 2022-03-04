@@ -28,13 +28,6 @@ public class UI_Tooltip : MonoBehaviour
 
         _header = container.Find("Header").GetComponent<TextMeshProUGUI>();
         _description = container.Find("Description").GetComponent<TextMeshProUGUI>();
-
-        Vector2 size = GetComponent<RectTransform>().sizeDelta;
-
-        Vector2 resolution = GetComponentInParent<CanvasScaler>().referenceResolution;
-        Vector2 screenScale = new Vector2(resolution.x / Screen.width, resolution.y / Screen.height);
-
-        _scaledSize = size / screenScale;
     }
 
     private void Start()
@@ -45,6 +38,13 @@ public class UI_Tooltip : MonoBehaviour
     public void Display()
     {
         gameObject.SetActive(true);
+
+        Vector2 size = GetComponent<RectTransform>().sizeDelta;
+
+        Vector2 resolution = GetComponentInParent<CanvasScaler>().referenceResolution;
+        Vector2 screenScale = new Vector2(resolution.x / Screen.width, resolution.y / Screen.height);
+
+        _scaledSize = size / screenScale;
     }
 
     public void Hide()

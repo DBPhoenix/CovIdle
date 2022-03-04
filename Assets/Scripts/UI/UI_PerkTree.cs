@@ -8,6 +8,8 @@ public class UI_PerkTree : MonoBehaviour
 
     private UI_Text _mutationPoints;
 
+    bool once;
+
     private void Awake()
     {
         if (Instance == null)
@@ -36,6 +38,20 @@ public class UI_PerkTree : MonoBehaviour
 
     public void Open()
     {
+        if (!once)
+        {
+            once = true;
+
+            UI_Death.Instance.Display(new string[] {
+                "This is Covid-19's possible mutations. All of these perks benefit Covid-19 in different unique ways.",
+                "The perktree is divided in 4 sections. Spreading Covid-19, lowering immunity, killing humanity and unlocking buildings.",
+                "The upper left section helps spreading Covid-19. The upper right section helps against the population passively growing immune.",
+                "The lower left section increases the deadliness of Covid-19. The lower right section unlocks multiple new and exciting upgrades allowing you to utilize deaths.",
+                "You can always mouse over the perks at a later time to get a detailed description of the perk, and if you're stuck there's a button in the upper left corner to get you back.",
+                "Now try clicking on the center perk!"
+            });
+        }
+
         gameObject.SetActive(true);
     }
 

@@ -31,5 +31,10 @@ public class TemperatureEditor : Editor
         GUILayout.Label("Description");
         building.Description = EditorGUILayout.TextArea(building.Description, GUILayout.Height(100));
         EditorStyles.textField.wordWrap = true;
+
+        if (GUI.changed)
+        {
+            EditorUtility.SetDirty(building);
+        }
     }
 }

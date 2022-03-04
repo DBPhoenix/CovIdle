@@ -7,6 +7,6 @@ public sealed class WhiteBloodCellsOne : UI_Perk
 {
     private protected override void Purchase()
     {
-        Perks.NaturalResistanceModifier += 0.05f;
+        Perks.NaturalResistanceModifier += 0.1f;
     }
 }

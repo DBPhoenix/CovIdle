@@ -23,12 +23,16 @@ public abstract class UI_Perk : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     private bool _isPointerOver = false;
 
+    private protected AudioSource _audio;
+
     private GameObject _disabled;
     private GameObject _enabled;
     private GameObject _purchased;
 
     private void Awake()
     {
+        _audio = GetComponent<AudioSource>();
+
         _disabled = transform.Find("Disabled").gameObject;
         _enabled = transform.Find("Enabled").gameObject;
         _purchased = transform.Find("Purchased").gameObject;
@@ -59,6 +63,8 @@ public abstract class UI_Perk : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
                 Purchase();
 
+                _audio.Play();
+
                 foreach (UI_Perk perk in LeadsTo)
                 {
                     perk.RequiredCount--;
@@ -73,7 +79,7 @@ public abstract class UI_Perk : MonoBehaviour, IPointerClickHandler, IPointerEnt
             }
             else
             {
-                transform.Find("Icon").GetComponent<Image>().color = new Color(255, 0, 0);
+                transform.Find("Icon").GetComponent<Image>().color = new Color(1, 0, 0);
 
                 Invoke("ResetColor", 1);
             }
@@ -82,7 +88,7 @@ public abstract class UI_Perk : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     private void ResetColor()
     {
-        transform.Find("Icon").GetComponent<Image>().color = new Color(255, 255, 255);
+        transform.Find("Icon").GetComponent<Image>().color = new Color(1, 1, 1);
     }
 
     public void OnPointerEnter(PointerEventData eventData)

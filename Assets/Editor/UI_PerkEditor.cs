@@ -34,5 +34,10 @@ public class UI_PerkEditor : Editor
         GUILayout.Label("Description");
         perk.Description = EditorGUILayout.TextArea(perk.Description, GUILayout.Height(100));
         EditorStyles.textField.wordWrap = true;
+
+        if (GUI.changed)
+        {
+            EditorUtility.SetDirty(perk);
+        }
     }
 }

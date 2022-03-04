@@ -13,6 +13,9 @@ public abstract class UI_ActivePerk : MonoBehaviour, IPointerClickHandler, IPoin
         set => SetStatus(value);
     }
 
+    private static bool s_once;
+    private protected static bool s_show;
+
     public double Cost;
 
     [TextArea]
@@ -22,12 +25,40 @@ public abstract class UI_ActivePerk : MonoBehaviour, IPointerClickHandler, IPoin
 
     private protected bool _isPointerOver = false;
 
+    private protected AudioSource _audio;
+
+    private void Awake()
+    {
+        _audio = GetComponent<AudioSource>();
+    }
+
     public void Update()
     {
         if (_isPointerOver)
         {
             UI_Tooltip.Instance.SetPosition(Input.mousePosition);
             UI_Tooltip.Instance.SetDescription($"{Description}\nCost: {Cost} Mutations");
+        }
+
+        if (s_show && !UI_PerkTree.Instance.gameObject.activeSelf)
+        {
+            s_show = false;
+
+            UI_Death.Instance.Display(new string[] {
+                "Don't worry, this is the last thing, I'll tell you for now. Learning to become a Grim Reaper is hard work.",
+                "Look at the new Active Perk, you just unlocked. Active Perks is a way to repeatedly spend Mutation Points.",
+                "This first Active Perk will be your main way to spread Covid-19! Hovering over it will display some new information.",
+                "Time to try it out!"
+            });
+        }
+    }
+
+    private void OnEnable()
+    {
+        if (!s_once)
+        {
+            s_once = true;
+            s_show = true;
         }
     }
 
@@ -38,6 +69,8 @@ public abstract class UI_ActivePerk : MonoBehaviour, IPointerClickHandler, IPoin
             UI_Overview.Instance.Mutations -= Cost;
 
             Purchase();
+
+            _audio.Play();
 
             IncreaseCost();
 

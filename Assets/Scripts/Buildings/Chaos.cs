@@ -12,6 +12,6 @@ public sealed class Chaos : UI_Building
 
     private protected override void Purchase()
     {
-        Perks.InfectionRate += 0.01f;
+        Perks.InfectionRate += 0.02f;
     }
 }

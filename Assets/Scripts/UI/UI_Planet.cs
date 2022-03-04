@@ -11,6 +11,12 @@ public class UI_Planet : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
     public bool Active;
 
     private bool _isPointerOver = false;
+    private AudioSource _audio;
+
+    private void Awake()
+    {
+        _audio = GetComponent<AudioSource>();
+    }
 
     private void Start()
     {
@@ -28,6 +34,8 @@ public class UI_Planet : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        _audio.Play();
+
         GameManager.Instance.OpenPlanet(PlanetData);
     }
 

@@ -1,0 +1,110 @@
+Where it all begins... Allows you to spread your virus gaining new infections and deaths.
+Unlock Active Ability: Spread Virus.
+
+Allows your virus to life in death people.
+Massively increase the chance to infect people.
+
+Your virus evolves to become harder to resist.
+Increases the chance to infect people and lowers the average natural resistance.
+
+Your virus now survives better in air.
+Increases the chance to infect people.
+
+The virus decreases the production of white blood cells, when entering the body.
+Decreases the average natural resistance.
+
+Your virus has bought chaos to the world. Times are changing.
+Increase / decrease the maximal / minimal ideal temperature of the virus.
+
+People start coughing virus disguised as white blood cells.
+Heavily decreases the average natural immunity and increases the chance to infect people.
+
+The virus starts a massively over production of red blood cells upon entering the body.
+Decreases the average natural resistance.
+
+Enables your virus to go dormant in the body. It will not get detected as easily and can survive between generations.
+Increases the chance for infected to stay infected between generations.
+
+Enables you to either lower / raise temperature depending on earlier choices.
+Unlocks building: Ice Age / Global Warming.
+
+Deaths will soon become your greatest resource.
+Increases death rate.
+
+Enables you to increase chance to infect people.
+Unlocks building: Chaos.
+
+Enables you to increase the amount of people infected meet per generation.
+Unlocks building: Fake News.
+
+Enables you to decrease natural resistance.
+Unlocks building: Anti Vaxxers.
+
+When Chaos spreading in the population and Fake News roaming the media has a symbiotic effect.
+Increase the effectiveness of Chaos and Fake News.
+
+It is getting hard to determine what is real and what is fake. Now Fake News starts to spread from mouth to mouth and not only through expensive media.
+Decrease cost multiplier of Fake News.
+
+Anti Vaxxers starts spreading Fake News on the media.
+Increases the effectiveness of Anti Vaxxers and Fake News.
+
+Enables you to kill immune people.
+Unlocks building: Jalousi.
+
+Your virus starts evolving towards dangerous symptoms.
+Increases death rate.
+
+When your virus enters people's bodies, they start an unhealthy overproduction of unusual hormones.
+Increases death rate.
+
+Your virus becomes more deadly than ever.
+Increases death rate.
+
+People start coughing causing more infections and more deaths.
+Increases the chance to infect people and increases death rate.
+
+Enables you to kill immunes by giving normal people a hormone overdose, causing them to attack each other.
+Unlocks Active Ability: Hormone Overload.
+
+Breathing gets harder every day after the virus infects one's body. The virus is able to stay alive in a body, as long as there is no oxygen.
+Increases death rate and slightly increases the chance for infected to stay infected between generations.
+
+Everyone who gets infected starts to cough blood, causing a massive increase in infected dying.
+Increase the chance to infect people and heavily increases death rate.
+
+When the population starts dying from different symptoms more and more funerals are held, causing more social interaction.
+Increases the amount of people infected meet per generation and slightly increases death rate.
+
+Helps your virus spreading.
+Increases the chance to infect people, mutation point gain and the amount of people infected meet per generation.
+
+Your virus learns to spread more effectively on contact.
+Increases the amount of people infected meet per generation.
+
+Instead of focusing on gaining more infected your virus evolves towards a faster mutation rate inside those who are already infected.
+Increases mutation points gain.
+
+Your virus becomes more infectious.
+Increase the chance to infect people.
+
+Learning from Germs, your virus are now able to live outside a body for a longer duration.
+Increases the amount of people infected meet per generation and slightly increases infection rate.
+
+Enables you to double your mutation points on use by starting a massive reproduction for a short period.
+Unlocks Active Ability: Mutation Overload.
+
+Your virus has become so dominant, that it will now start to devour other microorganisms inside your body, causing it to rapidly mutate when entering a new victim.
+Get a chance to gain mutation points when infecting new people.
+
+When chaos starts spreading there is less options for sanitizing.
+Increases chance to infect people.
+
+As with any crisis, there is always people, who refuses to believe in reality and they start spreading Fake News, while ignoring recommendations of lowering social contact.
+Increases the amount of people infected meet per generation.
+
+Some people do not believe in vaccines. Getting more of these people means lowering the average vaccine coverage of the population.
+Decreases the average natural resistance.
+
+"Why do they get to become immune, while I have to live in fear?" Is what they are thinking, as they start to kill each other out of Jalousi.
+Kill a small percentage of all immune.

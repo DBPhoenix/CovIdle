@@ -13,6 +13,9 @@ public abstract class UI_Building : MonoBehaviour, IPointerClickHandler, IPointe
         set => SetStatus(value);
     }
 
+    private static bool s_once;
+    private static bool s_show;
+
     public double Cost;
     public double CostModifier = 2;
 
@@ -28,10 +31,14 @@ public abstract class UI_Building : MonoBehaviour, IPointerClickHandler, IPointe
     private UI_Text _name;
     private UI_Text _price;
 
+    private protected AudioSource _audio;
+
     private void Awake()
     {
         _name = transform.Find("Name").GetComponent<UI_Text>();
         _price = transform.Find("Price").GetComponent<UI_Text>();
+
+        _audio = GetComponent<AudioSource>();
     }
 
     private protected void Start()
@@ -39,11 +46,30 @@ public abstract class UI_Building : MonoBehaviour, IPointerClickHandler, IPointe
         _price.SetValue(Cost);
     }
 
+    private void OnEnable()
+    {
+        if (!s_once)
+        {
+            s_once = true;
+            s_show = true;
+        }
+    }
+
     public void Update()
     {
         if (_isPointerOver)
         {
             UI_Tooltip.Instance.SetPosition(Input.mousePosition);
+        }
+
+        if (s_show && !UI_PerkTree.Instance.gameObject.activeSelf)
+        {
+            s_show = false;
+
+            UI_Death.Instance.Display(new string[] {
+                "Oh look at that, you can now spend deaths to improve Covid-19! You can always mouse over the upgrades later to get more information.",
+                "Spread Covid-19 more to generate deaths, and when you can afford it, why don't you give it a try and see what happens..."
+            });
         }
     }
 
@@ -54,6 +80,8 @@ public abstract class UI_Building : MonoBehaviour, IPointerClickHandler, IPointe
             PlanetCanvasManager.Instance.Planet.Deaths -= Cost;
 
             Purchase();
+
+            _audio.Play();
 
             IncreaseCost();
 

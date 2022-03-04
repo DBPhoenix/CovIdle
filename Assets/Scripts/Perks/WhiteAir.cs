@@ -7,7 +7,7 @@ public sealed class WhiteAir : UI_Perk
 {
     private protected override void Purchase()
     {
-        Perks.NaturalResistanceModifier += 0.025f;
-        Perks.InfectionRate += 0.025f;
+        Perks.NaturalResistanceModifier += 0.2f;
+        Perks.InfectionRate += 0.1f;
     }
 }

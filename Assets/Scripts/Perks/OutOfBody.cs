@@ -7,6 +7,6 @@ public sealed class OutOfBody : UI_Perk
 {
     private protected override void Purchase()
     {
-        Perks.InfectionRate += 0.20f;
+        Perks.InfectionRate += 1;
     }
 }

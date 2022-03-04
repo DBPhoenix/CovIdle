@@ -59,8 +59,6 @@ public class Population
 
         double[] distribution = UninfectedResistanceDistribution();
 
-        Debug.Log($"Infection Modifier: {infectionModifier}");
-
         // Calculate Total Amount of New Infections
         for (int i = 0; i < 10; i++)
         {
@@ -121,10 +119,6 @@ public class Population
         float temperatureDiff = Mathf.Min(Mathf.Abs(_planet.Temperature - Perks.MinOptimalTemperature), Mathf.Abs(_planet.Temperature - Perks.MaxOptimalTemperature));
         float temperatureModifier = Mathf.Pow(1 - 0.05f, temperatureDiff / 0.25f);
 
-        Debug.Log($"Temperature Modifier: {temperatureModifier}");
-        Debug.Log($"Infection Rate: {Perks.InfectionRate}");
-        Debug.Log($"Meetings Per Infected: {(_planet.Data.MeetingsPerInfected + Perks.MeetingsPerInfected)}");
-
         return temperatureModifier * Perks.InfectionRate * (_planet.Data.MeetingsPerInfected + Perks.MeetingsPerInfected) * (1 - (AverageResistance() * (1 - Math.Pow(0.95, Perks.NaturalResistanceModifier))));
     }
 
@@ -138,10 +132,6 @@ public class Population
             totalResistance += uninfected.Size * uninfected.NaturalResistance;
             totalUninfected += uninfected.Size;
         }
-
-        Debug.Log($"Total Resistance: {totalResistance}");
-        Debug.Log($"Total Uninfected: {totalUninfected}");
-        Debug.Log($"Average Resistance: {totalResistance / totalUninfected}");
 
         return (float) (totalResistance / totalUninfected);
     }

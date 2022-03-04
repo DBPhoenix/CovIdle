@@ -57,6 +57,8 @@ public class GameManager : MonoBehaviour
         UpdateStats();
 
         PlanetCanvasManager.Instance.Open(Planets["Earth"]);
+
+        DisplayTutorial();
     }
 
     private void Update()
@@ -86,6 +88,15 @@ public class GameManager : MonoBehaviour
         return _totalInfected;
     }
 
+    public void UniverseTutorial()
+    {
+        UI_Death.Instance.Display(new string[] {
+            "Welcome to the galaxy. As you've made quite some progress on Earth, I thought it was about time to show you the rest of the galaxy.",
+            "Once you've conquered all of the planets in the galaxy, you'll receive your well earned rewards and become the Grim Reaper.",
+            "Take your time, there's no need to hurry. Take care, it'll probably be a while, before we see each other again..."
+        });
+    }
+
     public void UpdateStats()
     {
         double totalDeaths = 0;
@@ -97,5 +108,15 @@ public class GameManager : MonoBehaviour
 
         PlanetCanvasManager.Instance.UpdateStats();
         UI_Overview.Instance.UpdateStats(GetTotalInfected(), totalDeaths);
+    }
+
+    private void DisplayTutorial()
+    {
+        UI_Death.Instance.Display(new string[] {
+            "Welcome to CovIdle!\nI am Death the Grim Reaper. And I'll teach you to kill all of humanity with this new brilliant weapon, Covid-19!",
+            "Covid-19 will automatically evolve over time giving you Mutation Points. You - the Grim Reaper Apprentice - are tasked to manage Covid-19.",
+            "On this screen you can see all the information you're able to gather from Covid-19. Use this information to develop Covid-19 and hopefully eradicate humanity.",
+            "If you ever get stuck, press escape and you'll return to this screen. Now let's get started, try opening the Perk Tree!"
+        });
     }
 }

@@ -40,5 +40,10 @@ public class ColdHeatOneEditor : Editor
         GUILayout.Label("Choice Description");
         perk.ChoiceDescription = EditorGUILayout.TextArea(perk.ChoiceDescription, GUILayout.Height(100));
         EditorStyles.textField.wordWrap = true;
+
+        if (GUI.changed)
+        {
+            EditorUtility.SetDirty(perk);
+        }
     }
 }

@@ -18,11 +18,13 @@ public sealed class Temperature : UI_Building
         {
             gameObject.name = "Ice Age";
             transform.Find("Image").GetComponent<Image>().sprite = IceAge;
+            Description = "As soon as the virus starts killing people, there will be no one left on earth to contribute to Global Warming, thus turning the world back to an Ice Age.\nLowers temperature.";
         }
         else
         {
             gameObject.name = "Global Warming";
             transform.Find("Image").GetComponent<Image>().sprite = GlobalWarming;
+            Description = "Everyone starts to realise that the end is near, causing them to start a massive overuse of natural resources, thus resulting in Global Warming.\nRaises temperature.";
         }
 
         SetName(gameObject.name);

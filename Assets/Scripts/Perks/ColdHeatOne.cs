@@ -18,6 +18,8 @@ public sealed class ColdHeatOne : UI_Perk, IPointerClickHandler, IChoiceReceiver
 
         Purchase();
 
+        _audio.Play();
+
         foreach (UI_Perk perk in LeadsTo)
         {
             perk.RequiredCount--;

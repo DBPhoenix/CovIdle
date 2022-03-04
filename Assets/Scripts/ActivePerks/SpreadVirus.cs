@@ -18,6 +18,18 @@ public sealed class SpreadVirus : UI_ActivePerk, IPointerClickHandler, IPointerE
             UI_Tooltip.Instance.SetPosition(Input.mousePosition);
             UI_Tooltip.Instance.SetDescription($"{Description}\nNext Generation:\n+ ~{Math.Floor(PlanetCanvasManager.Instance.Planet.EstimateNewInfections())} infections\n+ ~{Math.Floor(PlanetCanvasManager.Instance.Planet.EstimateNewDeaths())} deaths\nCost: {Cost} Mutations");
         }
+
+        if (s_show && !UI_PerkTree.Instance.gameObject.activeSelf)
+        {
+            s_show = false;
+
+            UI_Death.Instance.Display(new string[] {
+                "Don't worry, this is the last thing, I'll tell you for now. Learning to become a Grim Reaper is hard work.",
+                "Look at the new Active Perk, you just unlocked. Active Perks is a way to repeatedly spend Mutation Points.",
+                "This first Active Perk will be your main way to spread Covid-19! Hovering over it will display some new information.",
+                "Time to try it out!"
+            });
+        }
     }
 
     public new void OnPointerEnter(PointerEventData eventData)

@@ -313,7 +313,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cost: 2000
   CostModifier: 3
-  Description: You do be kinda Jalous.
+  Description: '"Why do they get to become immune, while I have to live in fear?"
+    Is what they are thinking, as they start to kill each other out of Jalousi.
+
+    Kill
+    a small percentage of all immune.'
   Multiplier: 0
 --- !u!1 &35827052
 GameObject:
@@ -601,8 +605,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a2a1583cecc75a178836468cd6400d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: Decrease people's naturel immunity and increase infection rate.
+  Icon: {fileID: 21300000, guid: b7df09980f3ae8d9a9d55b180557f74d, type: 3}
+  Description: 'People start coughing virus disguised as white blood cells.
+
+    Heavily
+    decreases the average natural immunity and increases the chance to infect people.'
   Cost: 200
   LeadsTo: []
   RequiredCount: 0
@@ -690,7 +697,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1807356319}
         m_TargetAssemblyTypeName: UI_Death, Assembly-CSharp
-        m_MethodName: Hide
+        m_MethodName: Continue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1031,7 +1038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cost: 500
   CostModifier: 2.5
-  Description: This do be kinda white, kekw
+  Description: ...
   Multiplier: 0
   Cold: 0
   IceAge: {fileID: 21300000, guid: 2d666667e31377bb6914d30005e18061, type: 3}
@@ -1295,8 +1302,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc41913c5504504ce875bce6178a8e92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: 3e33113b05ed33d84831348112ef0a66, type: 3}
-  Description: Increase virus resistance.
+  Icon: {fileID: 21300000, guid: 55b7d461343b40724ad40ed9f2bd3564, type: 3}
+  Description: 'Your virus evolves to become harder to resist.
+
+    Increases the
+    chance to infect people and lowers the average natural resistance.'
   Cost: 25
   LeadsTo:
   - {fileID: 2046835809}
@@ -1555,9 +1565,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e71bbeec42df58ff28a99ed4920696fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: Increase the effectiveness of Fake News and Anti Vaxxers.
-  Cost: 300
+  Icon: {fileID: 21300000, guid: ee37c0f0206719075a5ef7f80819db9f, type: 3}
+  Description: 'Anti Vaxxers starts spreading Fake News on the media.
+
+    Increases
+    the effectiveness of Anti Vaxxers and Fake News.'
+  Cost: 200
   LeadsTo: []
   RequiredCount: 0
 --- !u!1001 &171742099
@@ -1687,8 +1700,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d9ddb71a34e79d78c37684cdeaa59e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: a1d30ed2a097c0218a24ef9bcee9fe49, type: 3}
-  Description: Generates deaths.
+  Icon: {fileID: 21300000, guid: 640f2321763271070bac44138f235849, type: 3}
+  Description: 'Deaths will soon become your greatest resource.
+
+    Increases death
+    rate.'
   Cost: 25
   LeadsTo:
   - {fileID: 2086497539}
@@ -2449,8 +2465,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ef5faad654ec0dad957b4d7e70fc7bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: Increase / decrease the virus' ideal temperature.
+  Icon: {fileID: 21300000, guid: b6185164d5bf48509a49d7d45b793dc5, type: 3}
+  Description: 'Enables you to either lower / raise temperature depending on earlier
+    choices.
+
+    Unlocks building: Ice Age / Global Warming.'
   Cost: 500
   LeadsTo: []
   RequiredCount: 0
@@ -2721,6 +2740,156 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335551014}
   m_CullTransparentMesh: 1
+--- !u!1 &336703501
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 336703502}
+  - component: {fileID: 336703504}
+  - component: {fileID: 336703503}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &336703502
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336703501}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2103585312}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &336703503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336703501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Yes
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
+  m_sharedMaterial: {fileID: 4038646327203791832, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 22
+  m_fontSizeBase: 22
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &336703504
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336703501}
+  m_CullTransparentMesh: 1
+--- !u!224 &352466627 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+  m_PrefabInstance: {fileID: 4558845112523056220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &352466630 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4558845112170599066, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+  m_PrefabInstance: {fileID: 4558845112523056220}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4ee61facecf429e939d3dc1dbfe308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &376035418
 GameObject:
   m_ObjectHideFlags: 0
@@ -3170,8 +3339,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f46cf4c0f283f89a9775f119f54ca1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: Decrease people's naturel immunity.
+  Icon: {fileID: 21300000, guid: a5e1245969b489e6da9dabe1bea7e9b0, type: 3}
+  Description: 'Your virus starts a massively over production of red blood cells
+    upon entering the body.
+
+    Decreases the average natural resistance.'
   Cost: 300
   LeadsTo: []
   RequiredCount: 0
@@ -3187,6 +3359,7 @@ GameObject:
   - component: {fileID: 427839155}
   - component: {fileID: 427839154}
   - component: {fileID: 427839153}
+  - component: {fileID: 427839156}
   m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
@@ -3236,7 +3409,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
@@ -3253,11 +3426,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 427839154}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 352466630}
+        m_TargetAssemblyTypeName: UI_Options, Assembly-CSharp
+        m_MethodName: Show
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &427839154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3271,7 +3456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3296,6 +3481,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427839151}
   m_CullTransparentMesh: 1
+--- !u!114 &427839156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427839151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b1e3c3157bb3c2879e9b3a575f25289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &484399423
 GameObject:
   m_ObjectHideFlags: 0
@@ -3557,9 +3754,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ac3551c0c6df5678c478be0444ce1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: Increase the effectiveness of Fake News and Chaos.
-  Cost: 300
+  Icon: {fileID: 21300000, guid: 5fe1e396a40e7ec5da9234e1ea0fd6af, type: 3}
+  Description: 'When Chaos spreading in the population and Fake News roaming the
+    media has a symbiotic effect.
+
+    Increase the effectiveness of Chaos and Fake
+    News.'
+  Cost: 200
   LeadsTo: []
   RequiredCount: 0
 --- !u!1 &516092433
@@ -3835,6 +4036,140 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 528786536}
+  m_CullTransparentMesh: 1
+--- !u!1 &536322509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 536322510}
+  - component: {fileID: 536322512}
+  - component: {fileID: 536322511}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &536322510
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536322509}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1520974650}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &536322511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536322509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Main Menu
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
+  m_sharedMaterial: {fileID: 4038646327203791832, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 22
+  m_fontSizeBase: 22
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &536322512
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536322509}
   m_CullTransparentMesh: 1
 --- !u!1 &537884261
 GameObject:
@@ -4283,11 +4618,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5824304649357267271, guid: 5eb1f8a78bca6f876820a1bee8c1f6fc, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 116.62488
+      value: 116.65575
       objectReference: {fileID: 0}
     - target: {fileID: 5824304649357267271, guid: 5eb1f8a78bca6f876820a1bee8c1f6fc, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 116.62488
+      value: 116.65575
       objectReference: {fileID: 0}
     - target: {fileID: 5824304649357267271, guid: 5eb1f8a78bca6f876820a1bee8c1f6fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4319,11 +4654,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5824304649357267271, guid: 5eb1f8a78bca6f876820a1bee8c1f6fc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 58.3125
+      value: 58.327873
       objectReference: {fileID: 0}
     - target: {fileID: 5824304649357267271, guid: 5eb1f8a78bca6f876820a1bee8c1f6fc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -58.31244
+      value: -58.327873
       objectReference: {fileID: 0}
     - target: {fileID: 5824304649357267271, guid: 5eb1f8a78bca6f876820a1bee8c1f6fc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4344,7 +4679,19 @@ PrefabInstance:
     - target: {fileID: 5857138365938224082, guid: 5eb1f8a78bca6f876820a1bee8c1f6fc, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4179e4e82c77237509293d0eaaa503f3, type: 3}
+      objectReference: {fileID: 21300000, guid: 3b4f29b6d6adbaf63acbbb76add368ae, type: 3}
+    - target: {fileID: 5857138365938224082, guid: 5eb1f8a78bca6f876820a1bee8c1f6fc, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857138365938224082, guid: 5eb1f8a78bca6f876820a1bee8c1f6fc, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857138365938224082, guid: 5eb1f8a78bca6f876820a1bee8c1f6fc, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eb1f8a78bca6f876820a1bee8c1f6fc, type: 3}
 --- !u!224 &658819016 stripped
@@ -4561,7 +4908,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cost: 100
   CostModifier: 1.2
-  Description: Chaos is great. People killing each other go brrr.
+  Description: 'When chaos starts spreading there is less options for sanitizing.
+
+    Increases
+    chance to infect people.'
   Multiplier: 0
 --- !u!1001 &703704967
 PrefabInstance:
@@ -4690,8 +5040,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af6095bf86e1513bca265a6d24667838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: 6454f100eee41a21bab5bb2cca90eb0d, type: 3}
-  Description: 'Unlocks building: Fake News.'
+  Icon: {fileID: 21300000, guid: 04fb786f78720d4bf9cd0044b58c882a, type: 3}
+  Description: 'Enables you to increase the amount of people infected meet per generation.
+
+    Unlocks
+    building: Fake News.'
   Cost: 100
   LeadsTo:
   - {fileID: 484825565}
@@ -4958,8 +5311,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35de9734bedef06c4a323f5ec8f32092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: Give a chance for people to kill immune.
+  Icon: {fileID: 21300000, guid: 52866a038bce07a18bf470b097fa7b99, type: 3}
+  Description: 'Enables you to kill immune people.
+
+    Unlocks building: Jalousi.'
   Cost: 500
   LeadsTo: []
   RequiredCount: 0
@@ -5090,9 +5445,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3c6a6d03bbae7a87b7aea2311a2a5eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: Decrease cost multiplier of Fake News.
-  Cost: 0
+  Icon: {fileID: 21300000, guid: c050bae84bb23c220bde87ae6fb99c21, type: 3}
+  Description: 'It is getting hard to determine what is real and what is fake. Now
+    Fake News starts to spread from mouth to mouth and not only through expensive
+    media.
+
+    Decrease cost multiplier of Fake News.'
+  Cost: 300
   LeadsTo: []
   RequiredCount: 0
 --- !u!1001 &762072464
@@ -5285,7 +5644,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cost: 350
   CostModifier: 1.8
-  Description: Builing Anti Vaxxers seems hella funny ngl.
+  Description: 'Some people do not believe in vaccines. Getting more of these people
+    means lowering the average vaccine coverage of the population.
+
+    Decreases
+    the average natural resistance.'
   Multiplier: 0
 --- !u!1 &774210350
 GameObject:
@@ -5641,9 +6004,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0f010d0cb2113a0a9e0cfa68ea1870a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: 2cfffaeb63755a41b816deefe9381827, type: 3}
-  Description: 'Where it all begins... Allows you to spread your virus. Gains Active
-    Trait: Spread Virus.'
+  Icon: {fileID: 21300000, guid: 3b4f29b6d6adbaf63acbbb76add368ae, type: 3}
+  Description: 'Where it all begins... Allows you to spread your virus gaining new
+    infections and deaths.
+
+    Unlock Active Ability: Spread Virus.'
   Cost: 5
   LeadsTo:
   - {fileID: 154463627}
@@ -5852,10 +6217,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eed2cd6af6aa83853976104cc40861d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: 'Gain Active Ability: Hormone Overload. Kills 5% of all immune population
-    on use.'
-  Cost: 300
+  Icon: {fileID: 21300000, guid: d9b5726b7100b5499a4102537834e85f, type: 3}
+  Description: 'Enables you to kill immunes by giving normal people a hormone overdose,
+    causing them to attack each other.
+
+    Unlocks Active Ability: Hormone Overload.'
+  Cost: 200
   LeadsTo: []
   RequiredCount: 0
 --- !u!1 &871085544
@@ -6030,9 +6397,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46c09dad15a24dcaaacb8e3ed6ea63fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: Increase the chance to infect people and death rate.
-  Cost: 300
+  Icon: {fileID: 21300000, guid: d66a0e1bd83b7946788b7b1c885c50f8, type: 3}
+  Description: 'Everyone who gets infected starts to cough blood, causing a massive
+    increase in infected dying.
+
+    Increase the chance to infect people and heavily
+    increases death rate.'
+  Cost: 200
   LeadsTo: []
   RequiredCount: 0
 --- !u!1001 &912331456
@@ -6162,8 +6533,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fd359aba2ffa14da14291f7658e127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: 6896bc8bcb39e79c9b36ed280759e2a6, type: 3}
-  Description: Increase the death rate.
+  Icon: {fileID: 21300000, guid: 1e1c787726706f2768c8dd651e127448, type: 3}
+  Description: 'Your virus starts evolving towards dangerous symptoms.
+
+    Increases
+    death rate.'
   Cost: 25
   LeadsTo:
   - {fileID: 1570117863}
@@ -6544,8 +6918,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a44af899587cf6b368cca51472d6040f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: Increase the time people are infected for.
+  Icon: {fileID: 21300000, guid: a2b135a94f13bd708b4c09634f968721, type: 3}
+  Description: 'Enables your virus to go dormant in the body. It will not get detected
+    as easily and can survive between generations.
+
+    Increases the chance for
+    infected to stay infected between generations.'
   Cost: 200
   LeadsTo: []
   RequiredCount: 0
@@ -6832,6 +7210,7 @@ GameObject:
   - component: {fileID: 989401496}
   - component: {fileID: 989401495}
   - component: {fileID: 989401497}
+  - component: {fileID: 989401498}
   m_Layer: 5
   m_Name: Earth
   m_TagString: Untagged
@@ -6910,6 +7289,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlanetData: {fileID: 11400000, guid: f0c4331221f4aeea2b4ae37b64fa5bfc, type: 2}
   Active: 1
+--- !u!82 &989401498
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989401493}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0de3e7402d3e08556b80edaec3cec13a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1000258255
 GameObject:
   m_ObjectHideFlags: 0
@@ -7827,7 +8302,7 @@ RectTransform:
   - {fileID: 1639433498}
   - {fileID: 2085014317}
   m_Father: {fileID: 1989577397}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8051,8 +8526,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31d6a5639b05f608699a03c40a837824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: Raise the number of mutations points you get from infected.
+  Icon: {fileID: 21300000, guid: ef8bc188d09af5913baf7fb7070acff0, type: 3}
+  Description: 'Instead of focusing on gaining more infected your virus evolves towards
+    a faster mutation rate inside those who are already infected.
+
+    Increases
+    mutation points gain.'
   Cost: 100
   LeadsTo:
   - {fileID: 1274725426}
@@ -8186,8 +8665,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c255c694b7755d7e92f90fa9838bb6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: d6bb95aae3fe9d56fbe63d17555ba49d, type: 3}
-  Description: Raise the number of people, people meet.
+  Icon: {fileID: 21300000, guid: a490e4b72be88404883328913b5ad906, type: 3}
+  Description: 'Your virus learns to spread more effectively on contact.
+
+    Increases
+    the amount of people infected meet per generation.'
   Cost: 100
   LeadsTo:
   - {fileID: 2066914361}
@@ -8401,6 +8883,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120487871}
   m_CullTransparentMesh: 1
+--- !u!1 &1152855002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1152855003}
+  - component: {fileID: 1152855005}
+  - component: {fileID: 1152855004}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1152855003
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152855002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1807407882}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1152855004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152855002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: No
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
+  m_sharedMaterial: {fileID: 4038646327203791832, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 22
+  m_fontSizeBase: 22
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1152855005
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152855002}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1173743175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8528,8 +9144,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7c78be2498aebacd8accb6be73bff0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: Increase the chance to infect people and death rate.
+  Icon: {fileID: 21300000, guid: ee050b114a54578d095037fc4bcfcd27, type: 3}
+  Description: 'People start coughing causing more infections and more deaths.
+
+    Increases
+    the chance to infect people and increases death rate.'
   Cost: 100
   LeadsTo:
   - {fileID: 895983779}
@@ -8811,8 +9430,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8525b49dc6c165e79a16d700b5dca44a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: Increase the time people are infected and death rate.
+  Icon: {fileID: 21300000, guid: 3f9feaa326c84a72598a5778be09b21c, type: 3}
+  Description: 'Breathing gets harder every day after the virus infects one''s body.
+    The virus is able to stay alive in a body, as long as there is no oxygen.
+
+    Increases
+    death rate and slightly increases the chance for infected to stay infected between
+    generations.'
   Cost: 300
   LeadsTo: []
   RequiredCount: 0
@@ -8840,7 +9464,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cost: 250
   CostModifier: 1.5
-  Description: This Guy Does Not Believe.
+  Description: 'As with any crisis, there is always people, who refuses to believe
+    in reality and they start spreading Fake News, while ignoring recommendations
+    of lowering social contact.
+
+    Increases the amount of people infected meet
+    per generation.'
   Multiplier: 0
 --- !u!1001 &1274725423
 PrefabInstance:
@@ -8969,12 +9598,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d249fc14fc540c744ad7c168185da421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: Raise the number of people, people meet and increase the chance to
-    infect people.
+  Icon: {fileID: 21300000, guid: 7f0dcfd145000d3ca9e07c07645859db, type: 3}
+  Description: 'Learning from Germs, your virus are now able to live outside a body
+    for a longer duration.
+
+    Increases the amount of people infected meet per
+    generation and slightly increases infection rate.'
   Cost: 200
   LeadsTo: []
   RequiredCount: 0
+--- !u!1 &1276647985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1276647986}
+  m_Layer: 5
+  m_Name: Confirmation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1276647986
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276647985}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1780949075}
+  - {fileID: 1807407882}
+  - {fileID: 2103585312}
+  m_Father: {fileID: 4558845112523056221}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.45}
+  m_AnchorMax: {x: 1, y: 0.45}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -40, y: 100}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!1001 &1285285498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9102,8 +9772,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8a1d8d273e91213e9011d6bbd264322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: Increase / decrease the perfect temperature of the planet.
+  Icon: {fileID: 21300000, guid: 125e871efc4c25390ba0c54c31770f15, type: 3}
+  Description: 'Your virus has bought chaos to the world. Times are changing.
+
+    Increase
+    / decrease the maximal / minimal ideal temperature of the virus.'
   Cost: 100
   LeadsTo:
   - {fileID: 941793295}
@@ -9192,8 +9865,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -300, y: 100}
-  m_SizeDelta: {x: 400, y: 160}
+  m_AnchoredPosition: {x: -480, y: 160}
+  m_SizeDelta: {x: 800, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1333053295
 MonoBehaviour:
@@ -9875,6 +10548,7 @@ GameObject:
   - component: {fileID: 1493342073}
   - component: {fileID: 1493342072}
   - component: {fileID: 1493342071}
+  - component: {fileID: 1493342074}
   m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
@@ -9924,9 +10598,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -9941,11 +10615,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1493342072}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 352466630}
+        m_TargetAssemblyTypeName: UI_Options, Assembly-CSharp
+        m_MethodName: Show
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1493342072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9959,7 +10645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9983,6 +10669,227 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1493342069}
+  m_CullTransparentMesh: 1
+--- !u!114 &1493342074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493342069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b1e3c3157bb3c2879e9b3a575f25289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1520974649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1520974650}
+  - component: {fileID: 1520974653}
+  - component: {fileID: 1520974652}
+  - component: {fileID: 1520974651}
+  m_Layer: 5
+  m_Name: Exit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1520974650
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520974649}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 536322510}
+  m_Father: {fileID: 4558845112523056221}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.55}
+  m_AnchorMax: {x: 1, y: 0.55}
+  m_AnchoredPosition: {x: 0, y: -10}
+  m_SizeDelta: {x: -40, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1520974651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520974649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1520974652}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1276647985}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &1520974652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520974649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 419bddefe1b3e8d0e9df41ccdeaa78d6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1520974653
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520974649}
+  m_CullTransparentMesh: 1
+--- !u!1 &1564446939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1564446940}
+  - component: {fileID: 1564446942}
+  - component: {fileID: 1564446941}
+  m_Layer: 5
+  m_Name: Tutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1564446940
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564446939}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1807356316}
+  m_Father: {fileID: 1989577397}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: -0.1, y: -0.1}
+  m_AnchorMax: {x: 1.1, y: 1.1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1564446941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564446939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1564446942
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564446939}
   m_CullTransparentMesh: 1
 --- !u!1 &1569570656
 GameObject:
@@ -10157,8 +11064,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4346a78197f1ad64bd1c315535d1a6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: Increase date rate.
+  Icon: {fileID: 21300000, guid: 81519f97889fee530862e50073fcb478, type: 3}
+  Description: 'When your virus enters people''s bodies, they start an unhealthy
+    overproduction of unusual hormones.
+
+    Increases death rate.'
   Cost: 100
   LeadsTo:
   - {fileID: 749826030}
@@ -10425,8 +11335,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 079684c57cecbd39ea5cdcf10220de3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: Get a chance to gain a mutation point on infection.
+  Icon: {fileID: 21300000, guid: c58870c8222c3cf8f82e8d5a7d299e83, type: 3}
+  Description: 'Your virus has become so dominant, that it will now start to devour
+    other microorganisms inside your body, causing it to rapidly mutate when entering
+    a new victim.
+
+    Get a chance to gain mutation points when infecting new people.'
   Cost: 200
   LeadsTo: []
   RequiredCount: 0
@@ -10707,8 +11621,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c536d1b050bd1477d905d57ec4e0d1f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: 883517a261ebfb239abd7ca24b4441a0, type: 3}
-  Description: Increase the chance to infect people.
+  Icon: {fileID: 21300000, guid: d080a0ba425949f959e85e578333ff08, type: 3}
+  Description: 'Your virus becomes more infectious.
+
+    Increase the chance to infect
+    people.'
   Cost: 100
   LeadsTo:
   - {fileID: 2070804132}
@@ -10841,8 +11758,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b5ff7173161bd56b87f51975dbece9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: ae64a498c07c494bc8db225cdc539bbd, type: 3}
-  Description: Increase the death rate.
+  Icon: {fileID: 21300000, guid: 140768dc483b98f0f85b885b672cd780, type: 3}
+  Description: 'Your virus becomes more deadly than ever.
+
+    Increases death rate.'
   Cost: 100
   LeadsTo:
   - {fileID: 827173874}
@@ -10976,9 +11895,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11158dcc6ad3ffd2c9b4af609a56ce13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: 'Gain Active Ability: Mutation Overload. Double Mutation Points on
-    use.'
+  Icon: {fileID: 21300000, guid: 9323a426cb8e9b68ababd5241ed6848a, type: 3}
+  Description: 'Enables you to double your mutation points on use by starting a massive
+    reproduction for a short period.
+
+    Unlocks Active Ability: Mutation Overload.'
   Cost: 300
   LeadsTo: []
   RequiredCount: 0
@@ -11255,6 +12176,144 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769455682}
   m_CullTransparentMesh: 1
+--- !u!1 &1780949074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1780949075}
+  - component: {fileID: 1780949077}
+  - component: {fileID: 1780949076}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1780949075
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780949074}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1276647986}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1780949076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780949074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'You will <b>LOSE</b> all progression.
+
+    Are you sure?
+
+'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
+  m_sharedMaterial: {fileID: 4038646327203791832, guid: 20e6e5042e5430d8cb9d7f1796208d6a, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 22
+  m_fontSizeBase: 22
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1780949077
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780949074}
+  m_CullTransparentMesh: 1
 --- !u!1 &1786224863
 GameObject:
   m_ObjectHideFlags: 0
@@ -11460,6 +12519,7 @@ GameObject:
   - component: {fileID: 1807356316}
   - component: {fileID: 1807356318}
   - component: {fileID: 1807356317}
+  - component: {fileID: 1807356320}
   - component: {fileID: 1807356319}
   m_Layer: 5
   m_Name: Death
@@ -11475,18 +12535,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807356315}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1333053294}
   - {fileID: 52218468}
-  m_Father: {fileID: 1989577397}
-  m_RootOrder: 2
+  m_Father: {fileID: 1564446940}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -20, y: 20}
+  m_AnchoredPosition: {x: -220, y: 120}
   m_SizeDelta: {x: 240, y: 360}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1807356317
@@ -11539,6 +12599,235 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cbb0b3c3ac82beb5b8a3b95dc2aeed2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1807356320
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807356315}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 52565258ffa88f59490a5e293ea6cdaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 16
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &1807407881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1807407882}
+  - component: {fileID: 1807407885}
+  - component: {fileID: 1807407884}
+  - component: {fileID: 1807407883}
+  m_Layer: 5
+  m_Name: No
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1807407882
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807407881}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1152855003}
+  m_Father: {fileID: 1276647986}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.3}
+  m_AnchorMax: {x: 0.45, y: 0.3}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1807407883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807407881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1807407884}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1276647985}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1807407884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807407881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 419bddefe1b3e8d0e9df41ccdeaa78d6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1807407885
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807407881}
+  m_CullTransparentMesh: 1
 --- !u!1 &1835199250
 GameObject:
   m_ObjectHideFlags: 0
@@ -11783,8 +13072,8 @@ RectTransform:
   m_Father: {fileID: 1333053294}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.05, y: 0.05}
-  m_AnchorMax: {x: 0.8, y: 0.95}
+  m_AnchorMin: {x: 0.05, y: 0.1}
+  m_AnchorMax: {x: 0.8, y: 0.9}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -12471,7 +13760,7 @@ RectTransform:
   m_Children:
   - {fileID: 704716325}
   m_Father: {fileID: 1989577397}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12655,8 +13944,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bb51d7bff77d8f8388c7d03199f26c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: 'Unlocks building: Anti Vaxxers.'
+  Icon: {fileID: 21300000, guid: ea5db2d0d7949ef9a92511f20299532e, type: 3}
+  Description: 'Enables you to decrease natural resistance.
+
+    Unlocks building:
+    Anti Vaxxers.'
   Cost: 100
   LeadsTo:
   - {fileID: 168664169}
@@ -12753,9 +14045,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 352466627}
   - {fileID: 1941459055}
   - {fileID: 1075824193}
-  - {fileID: 1807356316}
+  - {fileID: 1564446940}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12891,8 +14184,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8724093a12a2ee449adfdb0c4fda358e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: 883517a261ebfb239abd7ca24b4441a0, type: 3}
-  Description: Helps your virus spreading.
+  Icon: {fileID: 21300000, guid: 6cf7c94ca62793ff0931702dd043f4c8, type: 3}
+  Description: 'Helps your virus spreading.
+
+    Increases the chance to infect people,
+    mutation point gain and the amount of people infected meet per generation.'
   Cost: 25
   LeadsTo:
   - {fileID: 1082855936}
@@ -13282,8 +14578,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beecbe1e059fd45979decfd7b4ab9d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: d63af79fe3262cc23887d904c8790892, type: 3}
-  Description: Increase the chance to infect people.
+  Icon: {fileID: 21300000, guid: dd6895a9bb51dfa7a909ac4ef7fd21b5, type: 3}
+  Description: 'Your virus now survives better in air.
+
+    Increases the chance
+    to infect people.'
   Cost: 100
   LeadsTo:
   - {fileID: 49344200}
@@ -13690,8 +14989,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e83af5a8154f18fc99cc39dc78484a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: d37541c51b3c6cf4eb42b1f4a8a8b2e2, type: 3}
-  Description: Decrease people's naturel immunity.
+  Icon: {fileID: 21300000, guid: 36799bb3cf5a52931924736ab5f756e7, type: 3}
+  Description: 'The virus decreases the production of white blood cells, when entering
+    the body.
+
+    Decreases the average natural resistance.'
   Cost: 100
   LeadsTo:
   - {fileID: 49344200}
@@ -13825,8 +15127,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da2249ad039f801e7a7ac140c99e72a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: Increase social meetings and deathrate.
+  Icon: {fileID: 21300000, guid: 0a09d336d39cbb0068286b70e9aebc29, type: 3}
+  Description: 'When the population start dying from different symptoms more and
+    more funerals are held, causing more social interaction.
+
+    Increases the amount
+    of people infected meet per generation and slightly increases death rate.'
   Cost: 500
   LeadsTo: []
   RequiredCount: 0
@@ -13957,8 +15263,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b6d4c53853966572ae95209bb7abcf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: Massively increase the chance to infect people.
+  Icon: {fileID: 21300000, guid: b2950ab9beeb512d9b4403d7b190cf69, type: 3}
+  Description: 'Allows your virus to life in death people.
+
+    Massively increase
+    the chance to infect people.'
   Cost: 500
   LeadsTo: []
   RequiredCount: 0
@@ -14223,13 +15532,162 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92306fcf02a48adee9f12a7161e72250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  Description: 'Unlocks building: Chaos.'
+  Icon: {fileID: 21300000, guid: 3033be08541daf9a0b53d15f3a276994, type: 3}
+  Description: 'Enables you to increase chance to infect people.
+
+    Unlocks building:
+    Chaos.'
   Cost: 100
   LeadsTo:
   - {fileID: 258158212}
   - {fileID: 484825565}
   RequiredCount: 0
+--- !u!1 &2103585311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2103585312}
+  - component: {fileID: 2103585315}
+  - component: {fileID: 2103585314}
+  - component: {fileID: 2103585313}
+  - component: {fileID: 2103585316}
+  m_Layer: 5
+  m_Name: Yes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2103585312
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103585311}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 336703502}
+  m_Father: {fileID: 1276647986}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.55, y: 0.3}
+  m_AnchorMax: {x: 1, y: 0.3}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2103585313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103585311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2103585314}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2103585316}
+        m_TargetAssemblyTypeName: UI_ChangeScene, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2103585314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103585311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 419bddefe1b3e8d0e9df41ccdeaa78d6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2103585315
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103585311}
+  m_CullTransparentMesh: 1
+--- !u!114 &2103585316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103585311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9612338413073652b20693fc78790fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2141813001
 GameObject:
   m_ObjectHideFlags: 0
@@ -14530,3 +15988,133 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: b87657ebff9d915198b52f2ad56adc8f, type: 3}
+--- !u!1001 &4558845112523056220
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1989577397}
+    m_Modifications:
+    - target: {fileID: 4558845111275079853, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845111866082476, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599070, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_Name
+      value: Options
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112170599071, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112838359739, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112838359739, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112884680110, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112884680110, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558845112884680110, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+--- !u!224 &4558845112523056221 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4558845112533626151, guid: fea5510c4f462dd34b51222b06f1bec2, type: 3}
+  m_PrefabInstance: {fileID: 4558845112523056220}
+  m_PrefabAsset: {fileID: 0}

@@ -17,5 +17,10 @@ public class UI_BuildingEditor : Editor
         GUILayout.Label("Description");
         building.Description = EditorGUILayout.TextArea(building.Description, GUILayout.Height(100));
         EditorStyles.textField.wordWrap = true;
+
+        if (GUI.changed)
+        {
+            EditorUtility.SetDirty(building);
+        }
     }
 }
