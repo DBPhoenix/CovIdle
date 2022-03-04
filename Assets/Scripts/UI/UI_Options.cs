@@ -20,6 +20,14 @@ public class UI_Options : MonoBehaviour
         Hide();
     }
 
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Hide();
+        }
+    }
+
     public void Hide()
     {
         gameObject.SetActive(false);

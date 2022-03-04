@@ -15474,7 +15474,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3125615096856475951, guid: fd10db1ae6a0109bba4445e4a8acdaaf, type: 3}
       propertyPath: m_Name
-      value: Out of Body
+      value: Infected Corpses
       objectReference: {fileID: 0}
     - target: {fileID: 3125615097102188415, guid: fd10db1ae6a0109bba4445e4a8acdaaf, type: 3}
       propertyPath: m_IsActive

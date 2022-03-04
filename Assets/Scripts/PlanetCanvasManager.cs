@@ -91,7 +91,7 @@ public class PlanetCanvasManager : MonoBehaviour
 
         if (!_reachedThousandMutation)
         {
-            if (UI_Overview.Instance.Mutations > 1000 && !UI_PerkTree.Instance.gameObject.activeSelf)
+            if (UI_Overview.Instance.Mutations > 1000 && !UI_PerkTree.Instance.gameObject.activeSelf && !UI_Options.Instance.gameObject.activeSelf)
             {
                 _reachedThousandMutation = true;
 
@@ -106,7 +106,7 @@ public class PlanetCanvasManager : MonoBehaviour
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.Escape) && !UI_PerkTree.Instance.gameObject.activeSelf)
+            if (Input.GetKeyDown(KeyCode.Escape) && !UI_PerkTree.Instance.gameObject.activeSelf && !UI_Options.Instance.gameObject.activeSelf)
             {
                 Close();
             }

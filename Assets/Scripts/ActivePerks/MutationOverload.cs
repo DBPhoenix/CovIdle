@@ -7,7 +7,7 @@ public sealed class MutationOverload : UI_ActivePerk
 {
     private protected override void IncreaseCost()
     {
-        Cost = Math.Floor(Cost * 2f);
+        Cost = Math.Floor(Cost * 3.4f);
     }
 
     private protected override void Purchase()
