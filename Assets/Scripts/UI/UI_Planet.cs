@@ -18,11 +18,6 @@ public class UI_Planet : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
         _audio = GetComponent<AudioSource>();
     }
 
-    private void Start()
-    {
-        gameObject.SetActive(Active);
-    }
-
     public void Update()
     {
         if (_isPointerOver)
@@ -34,24 +29,33 @@ public class UI_Planet : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        _audio.Play();
+        if (Active)
+        {
+            _audio.Play();
 
-        GameManager.Instance.OpenPlanet(PlanetData);
+            GameManager.Instance.OpenPlanet(PlanetData);
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        UI_Tooltip.Instance.SetHeader(PlanetData.name);
-        UI_Tooltip.Instance.SetDescription($"Infected: {Math.Floor(GameManager.Instance.Planets[PlanetData.name].Infected).ToString()}\nTemperature: {GameManager.Instance.Planets[PlanetData.name].Temperature}");
-        UI_Tooltip.Instance.Display();
+        if (Active)
+        {
+            UI_Tooltip.Instance.SetHeader(PlanetData.name);
+            UI_Tooltip.Instance.SetDescription($"Infected: {Math.Floor(GameManager.Instance.Planets[PlanetData.name].Infected).ToString()}\nTemperature: {GameManager.Instance.Planets[PlanetData.name].Temperature}");
+            UI_Tooltip.Instance.Display();
 
-        _isPointerOver = true;
+            _isPointerOver = true;
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        UI_Tooltip.Instance.Hide();
+        if (Active)
+        {
+            UI_Tooltip.Instance.Hide();
 
-        _isPointerOver = false;
+            _isPointerOver = false;
+        }
     }
 }

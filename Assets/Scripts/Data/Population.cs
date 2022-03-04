@@ -83,7 +83,10 @@ public class Population
             _infected[i].Size += infected;
         }
 
-        UI_Overview.Instance.Mutations += newInfections * Perks.MutationPointsFromInfected;
+        if (Perks.MutationPointsFromInfected > 1)
+        {
+            UI_Overview.Instance.Mutations += Math.Log(newInfections, Perks.MutationPointsFromInfected);
+        }
 
         double totalInfected = 0;
         foreach (PopulationSegment infected in _infected)

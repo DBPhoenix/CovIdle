@@ -76,6 +76,15 @@ public abstract class UI_ActivePerk : MonoBehaviour, IPointerClickHandler, IPoin
 
             PlanetCanvasManager.Instance.UpdateStats();
         }
+        else
+        {
+            GetComponentInChildren<Image>().color = new Color(1, 0, 0);
+        }
+    }
+
+    private void ResetColor()
+    {
+        GetComponentInChildren<Image>().color = new Color(1, 1, 1);
     }
 
     public void OnPointerEnter(PointerEventData eventData)

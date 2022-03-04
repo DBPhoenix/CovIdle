@@ -7,12 +7,12 @@ public sealed class HormonesOverload : UI_ActivePerk
 {
     private protected override void IncreaseCost()
     {
-        Cost = Math.Floor(Cost * 1.4f);
+        Cost = Math.Floor(Cost * 1.8f);
     }
 
     private protected override void Purchase()
     {
-        PlanetCanvasManager.Instance.Planet.Population.Uninfected[10].Size *= 0.95f;
+        PlanetCanvasManager.Instance.Planet.Deaths *= 2;
 
         GameManager.Instance.UpdateStats();
     }

@@ -91,7 +91,7 @@ public class PlanetCanvasManager : MonoBehaviour
 
         if (!_reachedThousandMutation)
         {
-            if (UI_Overview.Instance.Mutations > 1000)
+            if (UI_Overview.Instance.Mutations > 1000 && !UI_PerkTree.Instance.gameObject.activeSelf)
             {
                 _reachedThousandMutation = true;
 

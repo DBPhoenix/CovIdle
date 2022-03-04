@@ -92,6 +92,21 @@ public abstract class UI_Building : MonoBehaviour, IPointerClickHandler, IPointe
 
             SetTooltip();
         }
+        else
+        {
+            GetComponent<Image>().color = new Color(1, 0, 0);
+            _name.GetComponent<TextMeshProUGUI>().color = new Color(1, 0, 0);
+            _price.GetComponent<TextMeshProUGUI>().color = new Color(1, 0, 0);
+
+            Invoke("ResetColor", 1);
+        }
+    }
+
+    private protected void ResetColor()
+    {
+        GetComponent<Image>().color = new Color(1, 1, 1);
+        _name.GetComponent<TextMeshProUGUI>().color = new Color(1, 1, 1);
+        _price.GetComponent<TextMeshProUGUI>().color = new Color(1, 1, 1);
     }
 
     private void SetTooltip()
@@ -105,12 +120,20 @@ public abstract class UI_Building : MonoBehaviour, IPointerClickHandler, IPointe
     {
         SetTooltip();
 
+        GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f);
+        _name.GetComponent<TextMeshProUGUI>().color = new Color(0.5f, 0.5f, 0.5f);
+        _price.GetComponent<TextMeshProUGUI>().color = new Color(0.5f, 0.5f, 0.5f);
+
         _isPointerOver = true;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         UI_Tooltip.Instance.Hide();
+
+        GetComponent<Image>().color = new Color(1, 1, 1);
+        _name.GetComponent<TextMeshProUGUI>().color = new Color(1, 1, 1);
+        _price.GetComponent<TextMeshProUGUI>().color = new Color(1, 1, 1);
 
         _isPointerOver = false;
     }

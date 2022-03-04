@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
     {
         UI_Death.Instance.Display(new string[] {
             "Welcome to the galaxy. As you've made quite some progress on Earth, I thought it was about time to show you the rest of the galaxy.",
-            "Once you've conquered all of the planets in the galaxy, you'll receive your well earned rewards and become the Grim Reaper.",
+            "You can open a planet by clicking on it. Once you've conquered all of the planets in the galaxy, you'll receive your well earned rewards and become the Grim Reaper.",
             "Take your time, there's no need to hurry. Take care, it'll probably be a while, before we see each other again..."
         });
     }

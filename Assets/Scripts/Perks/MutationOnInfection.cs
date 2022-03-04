@@ -7,6 +7,6 @@ public sealed class MutationOnInfection : UI_Perk
 {
     private protected override void Purchase()
     {
-        Perks.MutationPointsFromInfected += 0.02f;
+        Perks.MutationPointsFromInfected = 2f;
     }
 }
