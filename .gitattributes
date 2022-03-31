@@ -1,0 +1,3 @@
+# Linguist ignore vendored files
+Packages/* linguist-vendored
+ProjectSettings/* linguist-vendored
